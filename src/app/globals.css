@@ -2,11 +2,14 @@
 
 @theme {
   --color-brownText: #666155;
+  --color-brownBg: #F8F1E5;
   --color-orange1: #FFEED1;
   --color-orange2: #F1CA87;
+  --color-orange3: #FFE6B9;
   --color-beige0: #FEFCFA;
   --color-beige1: #FFFBF3;
   --color-purple1: #EBD8F5;
+  --color-purple2: #A579CD;
   --color-deepPurple: #4B2473; 
 }
 
