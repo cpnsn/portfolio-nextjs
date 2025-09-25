@@ -38,7 +38,7 @@ export default function Nav() {
           <Link
             key={link.href}
             href={link.href}
-            className={`rounded-full py-1.5 px-4 lg:w-[7rem] text-center border hover:-translate-y-1 ease-in-out hover:bg-orange3 transition duration-300 ${
+            className={`rounded-full py-1.5 px-4 lg:w-[7rem] text-center font-extralight border hover:-translate-y-1 ease-in-out hover:bg-orange3 transition duration-300 ${
               isActive
                 ? "bg-beige0 border-orange1 pointer-events-none"
                 : "bg-orange1 border-white"

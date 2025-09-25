@@ -1,4 +1,10 @@
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+@import "swiper/css/grid";
+
 
 @theme {
   --color-brownText: #666155;
@@ -6,10 +12,12 @@
   --color-orange1: #FFEED1;
   --color-orange2: #F1CA87;
   --color-orange3: #FFE6B9;
+  --color-orange4: #FFE7B9;
   --color-beige0: #FEFCFA;
   --color-beige1: #FFFBF3;
   --color-purple1: #EBD8F5;
   --color-purple2: #A579CD;
+  --color-purple3: #E8D3EF;
   --color-deepPurple: #4B2473; 
 }
 

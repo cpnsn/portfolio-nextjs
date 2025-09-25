@@ -1,8 +1,14 @@
 import Image from "next/image";
 import CardLink from "@/components/CardLink";
 import Socials from "@/components/Socials";
+import { projectsData } from "@/data/projects";
+import HomeCarousel from "@/components/HomeCarousel";
 
 export default function Home() {
+  const defaultProjects = projectsData.flatMap((category) =>
+    category.projects.filter((p) => p.default)
+  );
+
   return (
     <div className="bg-gradient-to-b from-beige0 to-beige1 pt-24 lg:pt-36 pb-18">
       <header className="flex mb-30 px-8 min-[1024px]:px-[10%] min-[1280px]:px-[20%] min-[2000px]:px-[30%]">
@@ -107,7 +113,7 @@ export default function Home() {
       </header>
       <main>
         {/* <div className="bg-brownBg lg:rounded-xl lg:w-[80%] mx-auto px-8 min-[1024px]:px-[10%] min-[1280px]:px-[20%] min-[2000px]:px-[30%]"> */}
-        <div className="bg-brownBg py-12 lg:rounded-[3rem] lg:w-[90%] xl:w-[80%] min-[2000px]:w-[60%] mx-auto px-8 min-[1024px]:px-[5%] min-[1280px]:px-[10%] min-[2000px]:px-[30%]">
+        <div className="bg-brownBg py-12 lg:rounded-[3rem] min-[1024px]:w-[90%] min-[1280px]:w-[80%] min-[2000px]:w-[60%] mx-auto px-8 min-[1024px]:px-[5%] min-[1280px]:px-[10%] min-[2000px]:px-[10%]">
           <div className="relative w-full max-w-lg mb-12">
             <h2 className="text-deepPurple text-3xl lg:text-5xl font-black">
               Projets
@@ -119,6 +125,9 @@ export default function Home() {
               width={400}
               height={90}
             />
+          </div>
+          <div>
+            <HomeCarousel data={defaultProjects} />
           </div>
         </div>
       </main>

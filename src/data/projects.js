@@ -5,6 +5,7 @@ export const projectsData = [
       {
         id: "rock-paper-star",
         title: "Rock Paper Star",
+        year: "2022",
         summary:
           "Ce pierre-feuille-ciseaux sur le thème de Star Wars est le premier projet sur lequel j’ai travaillé dans le cadre de la formation intensive Développeur Full-Stack d’Ironhack. Le jeu se joue directement dans le navigateur, avec une ambiance sonore et visuelle inspirée de l’univers galactique.",
         goal: "L’objectif était de concevoir et développer un jeu simple mais complet en HTML, CSS et JavaScript, en respectant les bonnes pratiques de code (KISS et DRY). Le projet devait être versionné sur GitHub, inclure des commits réguliers, puis être déployé sur GitHub Pages, le tout en 5 jours.",
@@ -19,7 +20,8 @@ export const projectsData = [
           "Manipuler le DOM pour mettre à jour dynamiquement l’affichage selon les résultats",
           "Organiser le projet avec des commits réguliers et un déploiement fonctionnel sur GitHub Pages",
         ],
-        image: "/images/rock-paper-star.png",
+        image: "/images/projects/rock-paper-star.png",
+        default: true,
         tags: ["Ironhack", "HTML", "CSS", "Javascript"],
         link: "https://cpnsn.github.io/Ironhack-project-1-Rock-Paper-Scissors/",
         github:
@@ -28,6 +30,7 @@ export const projectsData = [
       {
         id: "todo",
         title: "Todo App",
+        year: "2022",
         summary:
           "Todo est une application de gestion de tâches développée dans le cadre du second projet de la formation intensive Développeur Full-Stack d’Ironhack. Elle permet aux utilisateurs de s’organiser en créant, modifiant et supprimant leurs tâches, avec un système d’authentification sécurisé.",
         goal: "Concevoir une application web complète en utilisant Express et Mongoose, tout en mettant en place les fonctionnalités essentielles d’une application moderne : authentification, gestion de données avec validation, et déploiement en ligne.",
@@ -43,7 +46,8 @@ export const projectsData = [
           "Mettre en place une authentification sécurisée avec chiffrement des mots de passe",
           "Gérer les erreurs de validation pour améliorer l’expérience utilisateur",
         ],
-        image: "/images/todo.png",
+        image: "/images/projects/todo.png",
+        default: false,
         tags: [
           "Ironhack",
           "HTML",
@@ -60,6 +64,7 @@ export const projectsData = [
       {
         id: "museek",
         title: "MuSeek",
+        year: "2022",
         summary:
           "Ce troisième et dernier projet de la formation intensive Développeur Full-Stack d’Ironhack, réalisé en binôme, consistait à développer une application web permettant de mettre en relation des musiciens et des groupes à la recherche de nouveaux talents. C’était l’occasion de mettre en pratique l’ensemble des compétences acquises, aussi bien en frontend qu’en backend, avec la stack MERN.",
         goal: "Concevoir une application complète et moderne, avec un frontend en React et un backend REST API sous Express/MongoDB. L’application devait gérer l’authentification des utilisateurs, proposer des actions CRUD sur plusieurs modèles et être déployée en ligne.",
@@ -74,7 +79,8 @@ export const projectsData = [
           "Structurer une application React avec plusieurs vues tout en maintenant la fluidité de l’expérience utilisateur (SPA)",
           "Implémenter un backend robuste avec validation et gestion centralisée des erreurs",
         ],
-        image: "/images/museek.png",
+        image: "/images/projects/museek.png",
+        default: true,
         tags: [
           "Ironhack",
           "HTML",
@@ -95,6 +101,7 @@ export const projectsData = [
       {
         id: "booki",
         title: "Booki",
+        year: "2023",
         summary:
           "Pour ce premier projet OpenClassrooms, il s’agissait de créer la page d’accueil d’une agence de voyage fictive, Booki, permettant aux utilisateurs de rechercher des hébergements et activités dans la ville de leur choix.",
         goal: "Intégrer fidèlement une maquette fournie par l’UI designer, en utilisant uniquement HTML et CSS, tout en respectant les contraintes techniques imposées. Ce projet avait aussi pour but de m’initier au responsive design et aux bonnes pratiques d’intégration.",
@@ -109,7 +116,8 @@ export const projectsData = [
           "Organiser le code CSS pour assurer lisibilité, réutilisabilité et maintien de la structure fournie",
           "Respecter strictement les spécifications et contraintes techniques définies par l’équipe (CTO + UI designer)",
         ],
-        image: "",
+        image: "/images/projects/booki.png",
+        default: false,
         tags: ["OpenClassrooms", "HTML", "CSS"],
         link: null,
         github: null,
@@ -117,6 +125,7 @@ export const projectsData = [
       {
         id: "ohmyfood",
         title: "ohmyfood",
+        year: "2023",
         summary:
           "Le second projet OpenClassrooms consistait à dynamiser une page web grâce aux animations CSS. Le site, développé en mobile-first, répertorie les menus de restaurants gastronomiques et propose une expérience utilisateur fluide et moderne.",
         goal: "Intégrer une interface responsive à partir de maquettes fournies, en respectant une approche “mobile first”. Mettre en œuvre des animations CSS soignées pour dynamiser l’expérience utilisateur, tout en utilisant un préprocesseur (SASS) et un suivi de version avec Git/GitHub.",
@@ -131,7 +140,8 @@ export const projectsData = [
           "Reproduire des animations précises à partir des maquettes et du prototype Figma",
           "Structurer efficacement les styles avec SASS pour éviter la redondance et faciliter la maintenance",
         ],
-        image: "",
+        image: "/images/projects/ohmyfood.png",
+        default: false,
         tags: ["OpenClassrooms", "HTML", "SASS"],
         link: null,
         github: "https://github.com/cpnsn/P3_ohMyFood",
@@ -139,6 +149,7 @@ export const projectsData = [
       {
         id: "gameon",
         title: "GameOn",
+        year: "2023",
         summary:
           "Ce troisième projet OpenClassrooms, réalisé pour la PME fictive GameOn, consistait à finaliser une landing page avec formulaire d’inscription. C’était le premier projet intégrant du JavaScript dans la formation.",
         goal: "Rendre le formulaire pleinement fonctionnel en ajoutant le code JavaScript manquant, tout en respectant les bonnes pratiques de structuration (fichiers séparés, code commenté, responsive design).",
@@ -153,7 +164,8 @@ export const projectsData = [
           "Gérer les événements de manière fluide pour offrir une bonne expérience utilisateur",
           "Garantir un comportement responsive et un rendu cohérent sur tous les appareils",
         ],
-        image: "",
+        image: "/images/projects/gameon.png",
+        default: false,
         tags: ["OpenClassrooms", "HTML", "CSS", "Javascript"],
         link: null,
         github: "https://github.com/cpnsn/game_on",
@@ -161,6 +173,7 @@ export const projectsData = [
       {
         id: "fisheye",
         title: "FishEye",
+        year: "2024",
         summary:
           "Ce quatrième projet OpenClassrooms consistait à développer un site web accessible pour la plateforme fictive FishEye, dédiée aux photographes indépendants. L’objectif était de créer un prototype fonctionnel fidèle aux maquettes et intégrant les exigences fortes en matière d’accessibilité.",
         goal: "Développer un site dynamique en JavaScript, conforme aux standards d’accessibilité, permettant la navigation clavier/lecteurs d’écran et l’affichage des données fournies en JSON.",
@@ -178,7 +191,8 @@ export const projectsData = [
           "Gestion des interactions complexes (modale, lightbox, likes) sans erreurs JavaScript",
           "Respect strict des standards WAI-ARIA et des bonnes pratiques d’accessibilité",
         ],
-        image: "",
+        image: "/images/projects/fisheye.png",
+        default: true,
         tags: ["OpenClassrooms", "HTML", "CSS", "Javascript"],
         link: null,
         github: "https://github.com/cpnsn/Front-End-Fisheye",
@@ -186,6 +200,7 @@ export const projectsData = [
       {
         id: "les-petits-plats",
         title: "Les Petits Plats",
+        year: "2024",
         summary:
           "Ce cinquième projet OpenClassrooms consistait à développer un moteur de recherche performant pour le site de recettes de cuisine Les Petits Plats. L’accent était mis sur la conception d’algorithmes efficaces, la comparaison de leurs performances et le respect des bonnes pratiques de développement.",
         goal: "Implémenter deux versions distinctes d’un algorithme de recherche en JavaScript, comparer leurs performances et recommander la plus efficace pour une intégration future côté back-end.",
@@ -201,7 +216,8 @@ export const projectsData = [
           "Gérer la sécurité (prévenir les injections HTML via les formulaires)",
           "S’assurer que le code soit valide W3C et conforme au design Figma",
         ],
-        image: "",
+        image: "/images/projects/les-petits-plats.png",
+        default: true,
         tags: ["OpenClassrooms", "HTML", "Bootstrap", "Javascript"],
         link: null,
         github: "https://github.com/cpnsn/Petits_Plats_P7",
@@ -209,6 +225,7 @@ export const projectsData = [
       {
         id: "billed",
         title: "Billed",
+        year: "2024",
         summary:
           "Ce sixième projet OpenClassrooms portait sur le SaaS RH Billed, dont la fonctionnalité “note de frais“ devait être finalisée. Mon rôle a été de prendre en charge le parcours employé, en corrigeant les bugs et en mettant en place les tests nécessaires pour garantir la fiabilité de l’application.",
         goal: "L’objectif principal était d’assurer la fiabilité du parcours employé. Pour y parvenir, il s’agissait de déboguer les parties existantes, de rédiger et implémenter différents niveaux de tests (unitaires et d’intégration), d’élaborer un plan de tests end-to-end manuel couvrant les scénarios réels utilisateurs, et de valider le bon fonctionnement global de l’application.",
@@ -224,7 +241,8 @@ export const projectsData = [
           "Utilisation de Chrome Debugger pour identifier et corriger les anomalies",
           "Mise en place d’une couverture de tests robuste (unitaires, intégration) et formalisation d’un plan E2E",
         ],
-        image: "",
+        image: "/images/projects/billed.png",
+        default: false,
         tags: ["OpenClassrooms", "HTML", "CSS", "Javascript"],
         link: null,
         github: "https://github.com/cpnsn/Billed-app-FR-Front",
@@ -232,6 +250,7 @@ export const projectsData = [
       {
         id: "learn-at-home",
         title: "Learn@Home",
+        year: "2024",
         summary:
           "Le septième projet de la formation OpenClassrooms consistait à cadrer un futur site web destiné à Learn@Home, une association fictive qui met en relation des enfants en difficulté scolaire avec des tuteurs bénévoles. L’enjeu n’était pas le développement technique, mais la définition précise des besoins pour préparer efficacement la phase de conception et de réalisation.",
         goal: "L’objectif principal était de recueillir, formaliser et présenter l’ensemble des besoins fonctionnels du client afin de préparer le développement de l’application. Cela passait par la création de livrables clairs et structurés (diagrammes, user stories, maquettes, Kanban) permettant à l’équipe projet et au client de partager une vision commune.",
@@ -246,7 +265,8 @@ export const projectsData = [
           "Prioriser les fonctionnalités pour structurer efficacement le Kanban",
           "Concevoir des maquettes cohérentes et simples, en respectant les contraintes de l’association et l’expérience utilisateur attendue",
         ],
-        image: "",
+        image: "/images/projects/learn-at-home.png",
+        default: true,
         tags: ["OpenClassrooms", "Figma", "Notion"],
         link: null,
         github: null,
@@ -254,6 +274,7 @@ export const projectsData = [
       {
         id: "kasa",
         title: "Kasa",
+        year: "2024",
         summary:
           "Le huitième projet OpenClassrooms consistait à développer la nouvelle plateforme web de Kasa, un acteur fictif de la location d’appartements entre particuliers. Il s’agissait de moderniser le site, initialement conçu en ASP.NET, en le migrant vers une stack JavaScript complète avec React côté front-end. À partir de maquettes Figma et d’un fichier JSON fourni en guise de back-end temporaire, j’ai conçu une application réactive et respectueuse des standards de qualité du code.",
         goal: "L’objectif principal de ce projet était de donner vie à la refonte du site Kasa en construisant l’intégralité de l’interface utilisateur avec React. Il s’agissait non seulement d’intégrer fidèlement les maquettes Figma en garantissant un rendu responsive, mais également d’implémenter les fonctionnalités prévues pour offrir une expérience fluide et moderne aux utilisateurs.",
@@ -270,7 +291,8 @@ export const projectsData = [
           "Gérer des comportements précis (logique circulaire de la galerie, affichage conditionnel des contrôles)",
           "Respecter les coding guidelines de Kasa pour produire un code clair, réutilisable et facilement maintenable",
         ],
-        image: "",
+        image: "/images/projects/kasa.png",
+        default: true,
         tags: ["OpenClassrooms", "React", "SASS"],
         link: null,
         github: "https://github.com/cpnsn/kasa_p11",
@@ -278,6 +300,7 @@ export const projectsData = [
       {
         id: "sportsee",
         title: "SportSee",
+        year: "2024",
         summary:
           "Le neuvième projet de la formation OpenClassrooms consistait à développer la page profil utilisateur de la startup fictive SportSee, dédiée au suivi sportif. Cette page permettait aux utilisateurs de visualiser leurs sessions, les calories brûlées et d’autres indicateurs d’activité à travers des graphiques interactifs. Le projet s’est concentré sur l’intégration front-end avec React, en exploitant des données simulées puis en intégrant l’API fournie par le back-end.",
         goal: "L’objectif principal était de recréer la page profil en utilisant React et en respectant les maquettes Figma et les User Stories définies par le Product Owner. Il s’agissait de rendre les données d’activité facilement compréhensibles via des graphiques et de garantir une expérience utilisateur fluide. Le projet visait également à structurer le code de manière maintenable, avec un service dédié pour les appels API et une standardisation des données récupérées.",
@@ -293,7 +316,8 @@ export const projectsData = [
           "Intégrer des graphiques interactifs avec Recharts",
           "Séparer la logique métier (appels API, transformation des données) de la logique d’affichage React pour un code clair et réutilisable",
         ],
-        image: "",
+        image: "/images/projects/sportsee.png",
+        default: true,
         tags: ["OpenClassrooms", "React", "Recharts", "Tailwind"],
         link: null,
         github: "https://github.com/cpnsn/SportSee",
@@ -301,6 +325,7 @@ export const projectsData = [
       {
         id: "argent-bank",
         title: "Argent Bank",
+        year: "2025",
         summary:
           "Le dixième projet de la formation OpenClassrooms consistait à développer la phase 1 d’une application bancaire pour Argent Bank, centrée sur l’authentification et la gestion du profil utilisateur. L’application web devait être créée avec React et Redux pour la gestion du state, et respecter le design responsive fourni. Le projet s’inscrivait dans un contexte professionnel réel, avec des API déjà fournies par l’équipe back-end et une documentation Swagger complète.",
         goal: "L’objectif de ce projet était de mettre en place un système complet d’authentification pour les utilisateurs de la banque, permettant de sécuriser l’accès aux informations personnelles et de gérer la mise à jour du profil. Il s’agissait également de garantir une expérience utilisateur fluide et sécurisée, de structurer le code front-end avec React et Redux de manière maintenable et de préparer la phase suivante concernant les transactions en proposant une architecture d’API conforme aux standards Swagger.",
@@ -315,7 +340,8 @@ export const projectsData = [
           "Gestion sécurisée des données sensibles des utilisateurs et des sessions",
           "Conception d’une API transactionnelle claire et standardisée pour la phase suivante, en suivant les bonnes pratiques Swagger",
         ],
-        image: "",
+        image: "/images/projects/argent-bank.png",
+        default: true,
         tags: ["OpenClassrooms", "React", "Redux", "Tailwind", "Swagger"],
         link: null,
         github: "https://github.com/cpnsn/Project-13-Bank-API",
@@ -323,6 +349,7 @@ export const projectsData = [
       {
         id: "wealth-health",
         title: "Wealth Health",
+        year: "2025",
         summary:
           "Le onzième projet OpenClassrooms consistait à convertir l’application interne HRnet d’une société financière de jQuery vers React. L’application souffrait de ralentissements et de bugs importants liés aux plugins jQuery utilisés pour les sélecteurs de date, les fenêtres modales, les menus déroulants et les tableaux. L’objectif principal était de créer une application 100 % React, modulaire et maintenable, tout en améliorant les performances et la stabilité de l’interface.",
         goal: "L’objectif de ce projet était de moderniser l’application HRnet en la rendant entièrement fonctionnelle avec React, en remplaçant le code jQuery obsolète et en assurant une expérience utilisateur fluide. Cela impliquait la conversion complète des pages principales, la création de composants React modulaires pour remplacer les plugins jQuery et la mise en place de tests de performance quantifiables afin de démontrer l’amélioration des performances.",
@@ -341,10 +368,11 @@ export const projectsData = [
           "Réalisation d’audits de performance comparatifs entre l’ancienne et la nouvelle application",
           "Documentation complète des composants pour assurer la maintenabilité et faciliter l’intégration future",
         ],
-        image: "",
+        image: "/images/projects/wealth-health.png",
+        default: true,
         tags: ["OpenClassrooms", "React", "Redux", "Tailwind", "npm"],
         link: null,
-        github: null,
+        github: "https://github.com/cpnsn/P12_Front-end",
       },
     ],
   },
@@ -354,35 +382,58 @@ export const projectsData = [
       {
         id: "ici-formation",
         title: "Ici Formation",
-        summary: "Durant mon alternance chez IcI Formation, j’ai participé à la maintenance et à l’évolution des sites de l’entreprise dans un contexte agile, avec des sprints de deux semaines et un suivi régulier des tickets. J’ai contribué à la refonte graphique du site principal en intégrant les maquettes, en développant de nouvelles fonctionnalités front-end et back-end, et en collaborant sur des optimisations SEO.",
+        year: "2023-2025",
+        summary:
+          "Durant mon alternance chez IcI Formation, j’ai participé à la maintenance et à l’évolution des sites de l’entreprise dans un contexte agile, avec des sprints de deux semaines et un suivi régulier des tickets. J’ai contribué à la refonte graphique du site principal en intégrant les maquettes, en développant de nouvelles fonctionnalités front-end et back-end, et en collaborant sur des optimisations SEO.",
         goal: "L’objectif principal était de moderniser le site principal grâce à une refonte graphique conforme aux maquettes et aux spécifications. Il s’agissait également de faire évoluer la plateforme en intégrant de nouvelles fonctionnalités et en améliorant son référencement. Le travail visait par ailleurs à garantir de bonnes performances techniques dans un environnement basé sur Symfony/Twig, Webpack et Docker, tout en renforçant la fiabilité du code par l’ajout de tests automatisés.",
-        features:["Participation à une refonte graphique complète, avec intégration des maquettes et respect des spécifications", "Développement et intégration de nouvelles fonctionnalités front-end et back-end en Symfony/Twig", "Optimisations SEO, en collaboration avec le responsable SEO", "Implémentation de tests automatisés avec Playwright et Jest"],
-        challenges: ["Intégrer la refonte graphique et les nouvelles fonctionnalités tout en conservant la stabilité du site existant", "Maintenir des performances optimales dans un environnement Symfony/Twig avec Webpack et Docker", "Renforcer la qualité et la fiabilité du code grâce à l’implémentation de tests automatisés avec Playwright et Jest"],
-        image: "",
-        tags: ["Ici Formation", "Symfony/Twig", "React", "Tailwind", "Playwright", "Jest"],
+        features: [
+          "Participation à une refonte graphique complète, avec intégration des maquettes et respect des spécifications",
+          "Développement et intégration de nouvelles fonctionnalités front-end et back-end en Symfony/Twig",
+          "Optimisations SEO, en collaboration avec le responsable SEO",
+          "Implémentation de tests automatisés avec Playwright et Jest",
+        ],
+        challenges: [
+          "Intégrer la refonte graphique et les nouvelles fonctionnalités tout en conservant la stabilité du site existant",
+          "Maintenir des performances optimales dans un environnement Symfony/Twig avec Webpack et Docker",
+          "Renforcer la qualité et la fiabilité du code grâce à l’implémentation de tests automatisés avec Playwright et Jest",
+        ],
+        image: "/images/projects/ici-formation.png",
+        default: true,
+        tags: [
+          "Ici Formation",
+          "Symfony/Twig",
+          "React",
+          "Tailwind",
+          "Playwright",
+          "Jest",
+        ],
         link: null,
         github: null,
       },
       {
         id: "outplacement-et-reclassement",
         title: "Outplacement et Reclassement",
+        year: "2023-2025",
         summary: "Lorem",
         goal: "Ipsum",
         features: ["1", "2", "3"],
         challenges: ["1", "2", "3"],
-        image: "",
+        image: "/images/projects/outplacement-et-reclassement.png",
+        default: true,
         tags: ["Ici Formation", "Next.js", "Tailwind"],
         link: null,
         github: null,
       },
       {
-        id: "chatbot",
+        id: "chatbot-ici-formation",
         title: "Chatbot interne Ici Formation",
+        year: "2025",
         summary: "lorem",
         goal: "ipsum",
         features: ["1", "2", "3"],
         challenges: ["1", "2", "3"],
-        image: "",
+        image: "/images/projects/chatbot-ici-formation.png",
+        default: true,
         tags: ["Ici Formation", "Symfony/Twig", "Tailwind"],
         link: null,
       },
