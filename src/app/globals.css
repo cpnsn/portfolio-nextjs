@@ -5,21 +5,20 @@
 @import "swiper/css/scrollbar";
 @import "swiper/css/grid";
 
-
 @theme {
   --color-brownText: #666155;
-  --color-brownBg: #F8F1E5;
-  --color-orange1: #FFEED1;
-  --color-orange2: #F1CA87;
-  --color-orange3: #FFE6B9;
-  --color-orange4: #FFE7B9;
-  --color-orange5: #FFF5E3;
-  --color-beige0: #FEFCFA;
-  --color-beige1: #FFFBF3;
-  --color-purple1: #EBD8F5;
-  --color-purple2: #A579CD;
-  --color-purple3: #E8D3EF;
-  --color-deepPurple: #4B2473; 
+  --color-brownBg: #f8f1e5;
+  --color-orange1: #ffeed1;
+  --color-orange2: #f1ca87;
+  --color-orange3: #ffe6b9;
+  --color-orange4: #ffe7b9;
+  --color-orange5: #fff5e3;
+  --color-beige0: #fefcfa;
+  --color-beige1: #fffbf3;
+  --color-purple1: #ebd8f5;
+  --color-purple2: #a579cd;
+  --color-purple3: #e8d3ef;
+  --color-deepPurple: #4b2473;
 }
 
 p {

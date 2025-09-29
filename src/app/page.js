@@ -29,7 +29,7 @@ export default function Home() {
               height={100}
             />
           </div>
-          <div className="w-[90%]">
+          <div className="w-[90%] text-sm">
             <p>
               Spécialisée en JavaScript et React, j’ai développé mes compétences
               grâce à une formation intensive en 2022, puis les ai consolidées
@@ -112,10 +112,11 @@ export default function Home() {
           />
         </div>
       </header>
+
       <main>
         {/* <div className="bg-brownBg lg:rounded-xl lg:w-[80%] mx-auto px-8 min-[1024px]:px-[10%] min-[1280px]:px-[20%] min-[2000px]:px-[30%]"> */}
         <div className="bg-brownBg lg:mb-30 py-18 lg:rounded-[3rem] min-[1024px]:w-[90%] min-[1280px]:w-[80%] min-[2000px]:w-[60%] mx-auto px-8 min-[1024px]:px-[5%] min-[1280px]:px-[10%] min-[2000px]:px-[10%]">
-          <div className="relative w-full max-w-lg mb-12">
+          <div className="relative w-full max-w-lg lg:mb-12">
             <h2 className="text-deepPurple text-3xl lg:text-5xl font-black">
               Projets
             </h2>
