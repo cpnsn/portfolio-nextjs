@@ -1,32 +1,22 @@
 "use client";
-import { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
-import ProjectCard from "./CardProject";
+import ProjectCard from "../CardProject";
 import { useId } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Grid, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/grid";
 import "swiper/css/navigation";
 
-export default function PortfolioCarousel({ data }) {
+export default function DesktopMobileCarousel({ data }) {
   const carouselId = useId();
   const prevClass = `custom-prev-${carouselId}`;
   const nextClass = `custom-next-${carouselId}`;
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkIfMobile = () => setIsMobile(window.innerWidth < 768);
-    checkIfMobile();
-    window.addEventListener("resize", checkIfMobile);
-    return () => window.removeEventListener("resize", checkIfMobile);
-  }, []);
-
-  return isMobile ? (
+  return (
     <div>
       <Swiper
-        modules={[Grid, Navigation]}
+        modules={[Navigation]}
         navigation={{
           prevEl: `.${prevClass}`,
           nextEl: `.${nextClass}`,
@@ -34,7 +24,9 @@ export default function PortfolioCarousel({ data }) {
         breakpoints={{
           0: {
             slidesPerView: 1,
-            slidesPerGroup: 1,
+          },
+          1024: {
+            slidesPerView: 3,
           },
         }}
       >
@@ -68,14 +60,12 @@ export default function PortfolioCarousel({ data }) {
           />
         </button>
       </div>
-    </div>
-  ) : (
-    <div className="flex flex-wrap w-full">
-      {data.map((project, index) => (
-        <div key={project.id} className="flex justify-center mb-10 w-[33.3%]">
-          <ProjectCard item={project} index={index} />
-        </div>
-      ))}
+      <Link
+        className="block mx-auto w-fit bg-purple2 text-beige0 py-2 px-6 mt-6 rounded-full hover:bg-deepPurple transition-colors duration-300"
+        href="/portfolio"
+      >
+        Tous les projets
+      </Link>
     </div>
   );
 }

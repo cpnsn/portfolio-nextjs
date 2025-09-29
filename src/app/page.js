@@ -3,7 +3,7 @@ import Image from "next/image";
 import CardLink from "@/components/CardLink";
 import Socials from "@/components/Socials";
 import { projectsData } from "@/data/projects";
-import HomeCarousel from "@/components/HomeCarousel";
+import GridCarousel from "@/components/carousels/GridCarousel";
 
 export default function Home() {
   const defaultProjects = projectsData.flatMap((category) =>
@@ -129,7 +129,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <HomeCarousel data={defaultProjects} />
+            <GridCarousel data={defaultProjects} />
           </div>
         </div>
 

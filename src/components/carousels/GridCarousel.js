@@ -1,14 +1,14 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import ProjectCard from "./CardProject";
+import ProjectCard from "../CardProject";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Grid, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/navigation";
 
-export default function HomeCarousel({ data }) {
+export default function GridCarousel({ data }) {
   return (
     <div>
       <Swiper

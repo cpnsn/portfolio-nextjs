@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { projectsData } from "@/data/projects";
-import PortfolioCarousel from "@/components/PortfolioCarousel";
+import MobileOnlyCarousel from "@/components/carousels/MobileOnlyCarousel";
 
 export default function Portfolio() {
-  const profectsByCategory = projectsData.map((category) => category);
+  const projectsByCategory = projectsData.map((category) => category);
 
   return (
     <div className="bg-brownBg pt-24 lg:pt-36">
@@ -48,7 +48,7 @@ export default function Portfolio() {
 
       <main className="bg-gradient-to-b from-beige0 to-beige1 pt-[3%] px-[3%] rounded-t-[3rem] lg:rounded-t-[6rem]">
         <div className="flex flex-col gap-10 lg:gap-20 bg-brownBg rounded-[2.5rem] lg:rounded-[4.5rem] py-10 lg:py-25 mx-auto px-[calc(2rem-3%)] min-[1024px]:px-[7%] min-[1280px]:px-[17%] min-[2000px]:px-[27%]">
-          {profectsByCategory.map((cat) => (
+          {projectsByCategory.map((cat) => (
             <div>
               <div className="relative w-full max-w-lg lg:mb-12">
                 <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
@@ -62,7 +62,7 @@ export default function Portfolio() {
                   height={90}
                 />
               </div>
-              <PortfolioCarousel data={cat.projects} />
+              <MobileOnlyCarousel data={cat.projects} />
             </div>
           ))}
           <div className="flex max-lg:flex-col justify-center gap-4 text-deepPurple">
