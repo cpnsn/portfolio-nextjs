@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
           <Nav />
           {children}
         </div>
-        <footer className="bg-beige1 p-8 text-center text-sm">
-          <div className="flex justify-center gap-8 mb-14">
+        <footer className="bg-beige1 lg:flex flex-row-reverse pt-20 p-8 lg:py-10 text-center text-sm">
+          <div className="lg:absolute flex justify-center gap-8 mb-14">
             <Image
               src="/icons/linkedin-purple.svg"
               alt="Logo LinkedIn"
@@ -44,15 +44,17 @@ export default function RootLayout({ children }) {
               height={50}
             />
           </div>
-          <p>Tous droits réservés © Céline Poinson {currentYear}</p>
-          <Image
-            className="mx-auto h-4 w-auto my-2"
-            src="/icons/line-x-1.svg"
-            alt="icon"
-            width={50}
-            height={50}
-          />
-          <p>Mentions légales</p>
+          <div className="mx-auto">
+            <p>Tous droits réservés © Céline Poinson {currentYear}</p>
+            <Image
+              className="mx-auto h-4 w-auto my-2"
+              src="/icons/line-x-1.svg"
+              alt="icon"
+              width={50}
+              height={50}
+            />
+            <p>Mentions légales</p>
+          </div>
         </footer>
       </body>
     </html>

@@ -154,7 +154,7 @@ export default function Projet({ params }) {
           <div>
             <div className="relative w-full max-w-lg lg:mb-12">
               <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
-                Autres projets
+                Plus de projets
               </h2>
               <Image
                 className="absolute w-[50%] -ml-4 mt-2"

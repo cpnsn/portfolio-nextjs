@@ -28,7 +28,7 @@ export default function Nav() {
 
   return (
     <nav
-      className={`z-20 fixed top-8 left-1/2 -translate-x-1/2 flex justify-center gap-4 transition-transform duration-300 ${
+      className={`z-20 fixed top-8 left-1/2 -translate-x-1/2 w-full flex justify-center gap-2 lg:gap-4 transition-transform duration-300 ${
         showNav ? "translate-y-0" : "-translate-y-[calc(100%+2rem)]"
       }`}
     >
@@ -38,7 +38,7 @@ export default function Nav() {
           <Link
             key={link.href}
             href={link.href}
-            className={`rounded-full py-1.5 px-4 lg:w-[7rem] text-center font-extralight border hover:-translate-y-1 ease-in-out hover:bg-orange3 transition duration-300 ${
+            className={`rounded-full py-2 lg:px-4 w-[29%] lg:w-[8rem] text-center font-medium text-deepPurple border hover:-translate-y-1 ease-in-out hover:bg-orange3 transition duration-300 ${
               isActive
                 ? "bg-beige0 border-orange1 pointer-events-none"
                 : "bg-orange1 border-white"

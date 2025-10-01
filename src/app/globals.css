@@ -13,12 +13,15 @@
   --color-orange3: #ffe6b9;
   --color-orange4: #ffe7b9;
   --color-orange5: #fff5e3;
+  --color-orange6: #FFF7E7;
   --color-beige0: #fefcfa;
   --color-beige1: #fffbf3;
+  --color-deepPurple: #4b2473;
   --color-purple1: #ebd8f5;
   --color-purple2: #a579cd;
   --color-purple3: #e8d3ef;
-  --color-deepPurple: #4b2473;
+  --color-purple4: #EBD7F5;
+  --color-purple5: oklch(38.1% 0.176 304.987);
 }
 
 p {

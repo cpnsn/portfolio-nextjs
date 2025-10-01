@@ -11,7 +11,7 @@ export default function Home() {
   );
 
   return (
-    <div className="bg-gradient-to-b from-beige0 to-beige1 pt-24 lg:pt-36 pb-18">
+    <div className="bg-gradient-to-b from-beige0 to-beige1 pt-24 lg:pt-36">
       <header className="flex mb-30 px-8 min-[1024px]:px-[10%] min-[1280px]:px-[20%] min-[2000px]:px-[30%]">
         <div className="lg:w-[70%]">
           <div className="w-fit">
