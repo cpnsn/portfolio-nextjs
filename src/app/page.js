@@ -3,7 +3,7 @@ import Image from "next/image";
 import CardLink from "@/components/CardLink";
 import Socials from "@/components/Socials";
 import { projectsData } from "@/data/projects";
-import GridCarousel from "@/components/carousels/GridCarousel";
+import GridCarousel from "@/components/carousels/projects/GridCarousel";
 
 export default function Home() {
   const defaultProjects = projectsData.flatMap((category) =>
@@ -32,18 +32,16 @@ export default function Home() {
           <div className="w-[90%] text-sm">
             <p>
               Spécialisée en JavaScript et React, j’ai développé mes compétences
-              grâce à une formation intensive en 2022, puis les ai consolidées
-              au cours de deux années d’alternance.
+              lors d’une formation intensive en 2022, avant de les consolider au
+              cours de deux années d’alternance.
             </p>
             <p className="my-4">
-              Issue d’une reconversion professionnelle, je bénéficie aujourd’hui
-              d’un parcours atypique. J’aborde les projets avec rigueur et fais
-              preuve d’une forte adaptabilité.
+              Forte d’un parcours en reconversion, j’apporte rigueur,
+              adaptabilité et une approche créative à chaque projet.
             </p>
             <p>
-              Je recherche aujourd’hui un poste en développement front-end dans
-              lequel je pourrai mettre ces atouts au service d’une équipe et de
-              projets innovants.
+              Je souhaite aujourd’hui mettre ces atouts au service d’une équipe
+              et contribuer à des projets front-end innovants.
             </p>
           </div>
           <div className="lg:hidden mt-16">
@@ -156,7 +154,7 @@ export default function Home() {
             />
           </Link>
           <Link
-            className="block absolute left-1/2 translate-x-[-50%] -bottom-4 mx-auto w-fit bg-purple2 text-beige0 py-2 px-10 mt-6 rounded-full hover:bg-deepPurple transition-colors duration-300"
+            className="block absolute left-1/2 translate-x-[-50%] -bottom-4 mx-auto w-fit bg-purple2 text-beige0 py-2 px-10 mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
             href="/cv"
           >
             Voir le CV
@@ -206,7 +204,7 @@ export default function Home() {
               height={90}
             />
             <a
-              className="h-fit mx-6 bg-purple2 text-beige0 font-bold text-lg py-2 px-6 mt-6 rounded-full hover:bg-deepPurple transition-colors duration-300"
+              className="h-fit mx-6 bg-purple2 text-beige0 font-bold text-lg py-2 px-6 mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
               href="mailto:cpoinson@hotmail.fr"
             >
               Me contacter

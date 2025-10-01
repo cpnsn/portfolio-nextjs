@@ -1,28 +1,19 @@
 "use client";
-import { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
-import ProjectCard from "../CardProject";
+import CardProject from "../../CardProject";
 import { useId } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-export default function MobileOnlyCarousel({ data }) {
+export default function DesktopMobileCarousel({ data }) {
   const carouselId = useId();
   const prevClass = `custom-prev-${carouselId}`;
   const nextClass = `custom-next-${carouselId}`;
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkIfMobile = () => setIsMobile(window.innerWidth < 768);
-    checkIfMobile();
-    window.addEventListener("resize", checkIfMobile);
-    return () => window.removeEventListener("resize", checkIfMobile);
-  }, []);
-
-  return isMobile ? (
+  return (
     <div>
       <Swiper
         modules={[Navigation]}
@@ -34,11 +25,14 @@ export default function MobileOnlyCarousel({ data }) {
           0: {
             slidesPerView: 1,
           },
+          1024: {
+            slidesPerView: 3,
+          },
         }}
       >
         {data.map((project, index) => (
           <SwiperSlide key={project.id} className="flex justify-center my-10">
-            <ProjectCard item={project} index={index} />
+            <CardProject item={project} index={index} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -47,7 +41,6 @@ export default function MobileOnlyCarousel({ data }) {
           className={`${prevClass} custom-prev p-3 rounded-full border border-purple2 w-[50px] h-[50px] hover:-translate-y-1 ease-in-out duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-default disabled:translate-y-0`}
         >
           <Image
-            className=""
             src="/icons/arrow-prev.svg"
             alt="{item.title}"
             width={30}
@@ -58,7 +51,6 @@ export default function MobileOnlyCarousel({ data }) {
           className={`${nextClass} custom-next p-3 rounded-full border border-purple2 w-[50px] h-[50px] hover:-translate-y-1 ease-in-out duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-default disabled:translate-y-0`}
         >
           <Image
-            className=""
             src="/icons/arrow-next.svg"
             alt="{item.title}"
             width={30}
@@ -66,14 +58,12 @@ export default function MobileOnlyCarousel({ data }) {
           />
         </button>
       </div>
-    </div>
-  ) : (
-    <div className="flex flex-wrap w-full">
-      {data.map((project, index) => (
-        <div key={project.id} className="flex justify-center mb-10 w-[33.3%]">
-          <ProjectCard item={project} index={index} />
-        </div>
-      ))}
+      <Link
+        className="block mx-auto w-fit bg-purple2 text-beige0 py-2 px-6 mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
+        href="/portfolio"
+      >
+        Tous les projets
+      </Link>
     </div>
   );
 }

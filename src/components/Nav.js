@@ -8,11 +8,13 @@ export default function Nav() {
 
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       setShowNav(currentScrollY < lastScrollY || currentScrollY < 50);
+      setIsScrollingUp(currentScrollY < lastScrollY && currentScrollY > 50);
       setLastScrollY(currentScrollY);
     };
 
@@ -28,8 +30,14 @@ export default function Nav() {
 
   return (
     <nav
-      className={`z-20 fixed top-8 left-1/2 -translate-x-1/2 w-full flex justify-center gap-2 lg:gap-4 transition-transform duration-300 ${
-        showNav ? "translate-y-0" : "-translate-y-[calc(100%+2rem)]"
+      className={`z-20 fixed top-8 left-1/2 -translate-x-1/2 flex justify-center gap-2 lg:gap-4 transition-all duration-1000 ${
+        showNav
+          ? `translate-y-0 ${
+              isScrollingUp
+                ? "bg-beige0/95 px-10 py-6 rounded-full w-fit backdrop-blur-sm ring-2 ring-white"
+                : ""
+            }`
+          : "-translate-y-[calc(100%+2rem)]"
       }`}
     >
       {links.map((link) => {
@@ -38,7 +46,7 @@ export default function Nav() {
           <Link
             key={link.href}
             href={link.href}
-            className={`rounded-full py-2 lg:px-4 w-[29%] lg:w-[8rem] text-center font-medium text-deepPurple border hover:-translate-y-1 ease-in-out hover:bg-orange3 transition duration-300 ${
+            className={`rounded-full py-2 lg:px-4 w-[29%] lg:w-[8rem] text-center border hover:-translate-y-1 ease-in-out hover:bg-orange3 transition duration-300 ${
               isActive
                 ? "bg-beige0 border-orange1 pointer-events-none"
                 : "bg-orange1 border-white"

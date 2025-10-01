@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { projectsData } from "@/data/projects";
-import MobileOnlyCarousel from "@/components/carousels/MobileOnlyCarousel";
-import DesktopMobileCarousel from "@/components/carousels/DesktopMobileCarousel";
+import MobileOnlyCarousel from "@/components/carousels/projects/MobileOnlyCarousel";
+import DesktopMobileCarousel from "@/components/carousels/projects/DesktopMobileCarousel";
 
 export default function Projet({ params }) {
   const { projectId } = params;
@@ -122,7 +122,7 @@ export default function Projet({ params }) {
               ))}
               {(project.link || project.github) && (
                 <a
-                  className="absolute max-lg:left-1/2 max-lg:-translate-x-1/2 lg:-left-20 -bottom-5 bg-purple2 text-beige0 py-2 px-10 rounded-full hover:bg-deepPurple transition-colors duration-300"
+                  className="absolute max-lg:left-1/2 max-lg:-translate-x-1/2 lg:-left-20 -bottom-5 bg-purple2 text-beige0 py-2 px-10 rounded-full hover:bg-purple5 transition-colors duration-300"
                   href={project.link ?? project.github}
                   target="_blank"
                 >

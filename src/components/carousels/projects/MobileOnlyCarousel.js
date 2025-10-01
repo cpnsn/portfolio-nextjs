@@ -1,19 +1,28 @@
 "use client";
-import Link from "next/link";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import ProjectCard from "../CardProject";
+import CardProject from "../../CardProject";
 import { useId } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-export default function DesktopMobileCarousel({ data }) {
+export default function MobileOnlyCarousel({ data }) {
   const carouselId = useId();
   const prevClass = `custom-prev-${carouselId}`;
   const nextClass = `custom-next-${carouselId}`;
 
-  return (
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => setIsMobile(window.innerWidth < 768);
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
+
+  return isMobile ? (
     <div>
       <Swiper
         modules={[Navigation]}
@@ -25,14 +34,11 @@ export default function DesktopMobileCarousel({ data }) {
           0: {
             slidesPerView: 1,
           },
-          1024: {
-            slidesPerView: 3,
-          },
         }}
       >
         {data.map((project, index) => (
           <SwiperSlide key={project.id} className="flex justify-center my-10">
-            <ProjectCard item={project} index={index} />
+            <CardProject item={project} index={index} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -60,12 +66,14 @@ export default function DesktopMobileCarousel({ data }) {
           />
         </button>
       </div>
-      <Link
-        className="block mx-auto w-fit bg-purple2 text-beige0 py-2 px-6 mt-6 rounded-full hover:bg-deepPurple transition-colors duration-300"
-        href="/portfolio"
-      >
-        Tous les projets
-      </Link>
+    </div>
+  ) : (
+    <div className="flex flex-wrap w-full">
+      {data.map((project, index) => (
+        <div key={project.id} className="flex justify-center mb-10 w-[33.3%]">
+          <CardProject item={project} index={index} />
+        </div>
+      ))}
     </div>
   );
 }

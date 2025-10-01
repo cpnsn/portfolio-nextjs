@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { projectsData } from "@/data/projects";
-import MobileOnlyCarousel from "@/components/carousels/MobileOnlyCarousel";
+import MobileOnlyCarousel from "@/components/carousels/projects/MobileOnlyCarousel";
 
 export default function Portfolio() {
   const projectsByCategory = projectsData.map((category) => category);

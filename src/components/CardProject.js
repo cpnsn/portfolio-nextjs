@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function ProjectCard({ item, index }) {
+export default function CardProject({ item, index }) {
   return (
     <div className="flex justify-center group">
       <Link className="relative w-[90%]" href={`/projet/${item.id}`}>
@@ -31,14 +31,14 @@ export default function ProjectCard({ item, index }) {
               width={100}
               height={100}
             />
-            <div className="hidden group-hover:flex gap-2 absolute top-10 ml-4 overflow-hidden">
+            {/* <div className="hidden group-hover:flex gap-2 absolute top-10 ml-4 overflow-hidden">
               <span className="text-xs bg-orange4 rounded-full py-1 px-4">
                 {item.tags[0]}
               </span>
               <span className="text-xs bg-purple3 rounded-full py-1 px-4">
                 {item.year}
               </span>
-            </div>
+            </div> */}
           </div>
           <div className="p-6 pt-14 bg-white rounded-t-[2.5rem] -mt-8">
             <h3 className="text-deepPurple font-black mb-4">{item.title}</h3>
@@ -47,11 +47,11 @@ export default function ProjectCard({ item, index }) {
             </p>
           </div>
         </div>
-        {/* <div className="opacity-0 group-hover:opacity-100 whitespace-nowrap absolute left-1/2 -translate-x-1/2 bottom-6 bg-purple2 hover:bg-deepPurple transition duration-300 text-white text-center text-sm font-bold py-4 w-[80%] rounded-xl">
+        {/* <div className="opacity-0 group-hover:opacity-100 whitespace-nowrap absolute left-1/2 -translate-x-1/2 bottom-6 bg-purple2 hover:bg-purple5 transition duration-300 text-white text-center text-sm font-bold py-4 w-[80%] rounded-xl">
           + d'informations
         </div>  */}
 
-        <div className="opacity-0 group-hover:opacity-100 absolute left-1/2 -translate-x-1/2 bottom-6 bg-purple2 hover:-translate-y-1 hover:bg-deepPurple ease-in-out transition duration-300 w-[90px] h-[40px] rounded-full flex justify-center">
+        {/* <div className="opacity-0 group-hover:opacity-100 absolute left-1/2 -translate-x-1/2 bottom-6 bg-purple2 hover:-translate-y-1 hover:bg-purple5 ease-in-out transition duration-300 w-[90px] h-[40px] rounded-full flex justify-center">
           <Image
             className=""
             src="/icons/more-white.svg"
@@ -59,7 +59,7 @@ export default function ProjectCard({ item, index }) {
             width={15}
             height={15}
           />
-        </div>
+        </div> */}
       </Link>
     </div>
   );
