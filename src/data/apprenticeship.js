@@ -12,7 +12,7 @@ export const apprenticeshipData = [
           Au programme : <br></br> • choisir une solution technique adaptée à un
           client et travailler en mode Agile, <br></br> • créer des sites webs
           avec HTML et CSS, <br></br> • créer des applications web dynamiques
-          avec Javascript et React, <br></br> • communiquer avec le back-end de
+          avec JavaScript et React, <br></br> • communiquer avec le back-end de
           l’application grâce à une API, <br></br> • mettre en œuvre des test
           unitaires et d’intégration et débugger le code, <br></br> • résoudre
           des problèmes techniques avec un langage de programmation et des
@@ -21,8 +21,8 @@ export const apprenticeshipData = [
         </p>
       </div>
     ),
-    linkProjects: "/",
-    linkDiploma: "/",
+    linkProjects: "/portfolio/#openclassrooms",
+    linkDiploma: "/images/diplome_OPC_Celine_Poinson.pdf",
     btnText: "Ici Formation",
   },
   {
@@ -39,14 +39,14 @@ export const apprenticeshipData = [
         </p>
         <p className="mt-4">
           Voici la liste non exhaustive des technologies et outils avec lesquels
-          j’ai travaillé : Javascript, React, PHP, Symfony, Tailwind, Bootstrap,
+          j’ai travaillé : JavaScript, React, PHP, Symfony, Tailwind, Bootstrap,
           Playwright, Jest, Docker, Webpack, Bitbucket, Vulcan, etc. Je vous
           laisse le soin de parcourir les projets pour plus d’informations.
         </p>
       </div>
     ),
-    linkProjects: "/",
-    linkDiploma: "/",
+    linkProjects: "/portfolio/#iciformation",
+    linkDiploma: null,
     btnText: "OpenClassrooms",
   },
 ];

@@ -169,10 +169,10 @@ export default function Projet({ params }) {
           <div className="flex max-lg:flex-col justify-center gap-4 text-deepPurple">
             <Link
               href="/cv"
-              className="flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/30 transition duration-300 rounded-xl border border-white border-4"
+              className="max-w-[330px] max-lg:mx-auto flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
             >
               <p>
-                Au delà des projets <br></br>{" "}
+                Au-delà des projets <br></br>{" "}
                 <span className="font-bold text-xl">Voir le CV</span>
               </p>
               <Image
@@ -185,7 +185,7 @@ export default function Projet({ params }) {
             </Link>
             <Link
               href="mailto:cpoinson@hotmail.fr"
-              className="flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/30 transition duration-300 rounded-xl border border-white border-4"
+              className="max-w-[330px] max-lg:mx-auto flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
             >
               <p>
                 N'hésitez pas à <br></br>{" "}

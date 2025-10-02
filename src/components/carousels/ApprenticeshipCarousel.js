@@ -40,17 +40,22 @@ export default function ApprenticeshipCarousel({ data }) {
                 </h4>
                 {item.content}
                 <Link
-                  className="max-lg:absolute bottom-20 whitespace-nowrap left-1/2 -translate-x-1/2 max-lg:block text-center bg-purple2 text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-6 max-lg:rounded-r-full rounded-l-full hover:bg-purple2/80 transition-colors duration-300"
-                  href="/"
+                  className={`max-lg:absolute bottom-20 whitespace-nowrap left-1/2 -translate-x-1/2 max-lg:block text-center bg-purple2 text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-6 max-lg:rounded-r-full ${
+                    !item.linkDiploma ? "rounded-r-full" : ""
+                  } rounded-l-full hover:bg-purple2/80 transition-colors duration-300`}
+                  href={item.linkProjects}
                 >
                   Voir les projets
                 </Link>
-                <a
-                  className="max-lg:absolute bottom-5 whitespace-nowrap left-1/2 -translate-x-1/2 max-lg:block text-center lg:-ml-4 bg-deepPurple text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-4 lg:mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
-                  href="/example.com"
-                >
-                  Voir la certification
-                </a>
+                {item.linkDiploma && (
+                  <a
+                    className="max-lg:absolute bottom-5 whitespace-nowrap left-1/2 -translate-x-1/2 max-lg:block text-center lg:-ml-4 bg-deepPurple text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-4 lg:mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
+                    href={item.linkDiploma}
+                    target="_blank"
+                  >
+                    Voir la certification
+                  </a>
+                )}
               </div>
               <Image
                 onClick={goToNextOrPrev}

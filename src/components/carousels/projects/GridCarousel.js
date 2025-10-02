@@ -22,6 +22,10 @@ export default function GridCarousel({ data }) {
             slidesPerView: 1,
             slidesPerGroup: 1,
           },
+          640: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
           1024: {
             slidesPerView: 3,
             grid: { rows: 2, fill: "row" },

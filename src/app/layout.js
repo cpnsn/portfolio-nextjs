@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
@@ -5,7 +6,6 @@ import Nav from "@/components/Nav";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
-  // weight: ["400", "700"],
 });
 
 export const metadata = {
@@ -18,31 +18,40 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="fr">
-      <body className={`${bricolageGrotesque.className} text-brownText`}>
+      <body
+        className={`${bricolageGrotesque.className} text-brownText`}
+      >
         <div>
           <Nav />
           {children}
         </div>
         <footer className="bg-beige1 lg:flex flex-row-reverse pt-20 p-8 lg:py-10 text-center text-sm">
           <div className="lg:absolute flex justify-center gap-8 mb-14">
-            <Image
-              src="/icons/linkedin-purple.svg"
-              alt="Logo LinkedIn"
-              width={50}
-              height={50}
-            />
-            <Image
-              src="/icons/github-purple.svg"
-              alt="Logo GitHub"
-              width={50}
-              height={50}
-            />
-            <Image
+            <a
+              href="https://www.linkedin.com/in/celine-poinson/"
+              target="_blank"
+            >
+              <Image
+                src="/icons/linkedin-purple.svg"
+                alt="Logo LinkedIn"
+                width={50}
+                height={50}
+              />
+            </a>
+            <a href="https://github.com/cpnsn/" target="_blank">
+              <Image
+                src="/icons/github-purple.svg"
+                alt="Logo GitHub"
+                width={50}
+                height={50}
+              />
+            </a>
+            {/* <Image
               src="/icons/figma-purple.svg"
               alt="Logo Figma"
               width={50}
               height={50}
-            />
+            /> */}
           </div>
           <div className="mx-auto">
             <p>Tous droits réservés © Céline Poinson {currentYear}</p>
@@ -53,7 +62,7 @@ export default function RootLayout({ children }) {
               width={50}
               height={50}
             />
-            <p>Mentions légales</p>
+            <Link className="font-extralight" href="mentions-legales">Mentions légales</Link>
           </div>
         </footer>
       </body>

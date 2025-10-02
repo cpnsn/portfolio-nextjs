@@ -34,6 +34,9 @@ export default function MobileOnlyCarousel({ data }) {
           0: {
             slidesPerView: 1,
           },
+          640: {
+            slidesPerView: 2,
+          },
         }}
       >
         {data.map((project, index) => (
@@ -70,7 +73,10 @@ export default function MobileOnlyCarousel({ data }) {
   ) : (
     <div className="flex flex-wrap w-full">
       {data.map((project, index) => (
-        <div key={project.id} className="flex justify-center mb-10 w-[33.3%]">
+        <div
+          key={project.id}
+          className="flex justify-center mb-10 w-[48%] lg:w-[33.3%]"
+        >
           <CardProject item={project} index={index} />
         </div>
       ))}

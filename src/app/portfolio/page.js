@@ -8,7 +8,7 @@ export default function Portfolio() {
 
   return (
     <div className="bg-brownBg pt-24 lg:pt-36">
-      <header className="relative mx-8 lg:mx-auto mb-15 lg:mb-36 lg:flex items-center lg:max-w-[700px] bg-beige0 max-sm:mt-10 py-8 px-8 lg:px-18 rounded-xl border border-white border-4">
+      <header className="sticky top-24 lg:top-36 mx-8 sm:mx-auto mb-15 lg:mb-36 lg:flex items-center sm:max-w-[500px] lg:max-w-[700px] bg-beige0 max-sm:mt-10 py-8 px-8 lg:px-18 rounded-xl border border-white border-4">
         <h1 className="lg:w-[50%] text-center absolute -top-6 max-lg:left-1/2 max-lg:-translate-x-1/2 lg:relative text-deepPurple font-black text-4xl lg:text-5xl">
           Projets
         </h1>
@@ -46,12 +46,12 @@ export default function Portfolio() {
         />
       </header>
 
-      <main className="bg-gradient-to-b from-beige0 to-beige1 pt-[3%] px-[3%] rounded-t-[3rem] lg:rounded-t-[6rem]">
+      <main className="z-10 relative bg-gradient-to-b from-beige0 to-beige1 pt-[3%] px-[3%] rounded-t-[3rem] lg:rounded-t-[6rem]">
         <div className="flex flex-col gap-10 lg:gap-20 bg-brownBg rounded-[2.5rem] lg:rounded-[4.5rem] py-10 lg:py-25 mx-auto px-[calc(2rem-3%)] min-[1024px]:px-[7%] min-[1280px]:px-[17%] min-[2000px]:px-[27%]">
           {projectsByCategory.map((cat) => (
-            <div>
-              <div className="relative w-full max-w-lg lg:mb-12">
-                <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
+            <div id={cat.id}>
+              <div className="relative w-full max-w-lg sm:mb-12">
+                <h2 className="text-deepPurple mt-8 text-3xl lg:text-[2.5rem] font-black">
                   {cat.formation}
                 </h2>
                 <Image
@@ -68,10 +68,10 @@ export default function Portfolio() {
           <div className="flex max-lg:flex-col justify-center gap-4 text-deepPurple">
             <Link
               href="/cv"
-              className="flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/30 transition duration-300 rounded-xl border border-white border-4"
+              className="max-w-[330px] max-lg:mx-auto flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
             >
               <p>
-                Au delà des projets <br></br>{" "}
+                Au-delà des projets <br></br>{" "}
                 <span className="font-bold text-xl">Voir le CV</span>
               </p>
               <Image
@@ -84,7 +84,7 @@ export default function Portfolio() {
             </Link>
             <Link
               href="mailto:cpoinson@hotmail.fr"
-              className="flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/30 transition duration-300 rounded-xl border border-white border-4"
+              className="max-w-[330px] max-lg:mx-auto flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
             >
               <p>
                 N'hésitez pas à <br></br>{" "}

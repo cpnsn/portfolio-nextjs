@@ -20,8 +20,8 @@ export default function Resume() {
 
   return (
     <div className="bg-gradient-to-b from-beige0 to-beige1 pt-24 lg:pt-36">
-      <header className="flex gap-10 mb-20 px-8 min-[1024px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
-        <div className="relative w-[50px] h-auto">
+      <header className="flex gap-10 mb-20 px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
+        <div className="max-[375px]:hidden relative w-[50px] h-auto">
           <Image
             src="/icons/line-y-2.svg"
             alt="icon"
@@ -46,23 +46,32 @@ export default function Resume() {
       </header>
 
       <main>
-        <div className="text-right lg:whitespace-nowrap px-8 min-[1024px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
+        <div className="text-right lg:whitespace-nowrap px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
           <p className="text-deepPurple !font-bold">2012-2013</p>
           <p>Première année de licence LLCE anglais</p>
           <p className="text-sm">Université de Cergy-Pontoise</p>
         </div>
 
-        <div className="relative bg-orange5 mt-16 py-15 px-8 min-[1024px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
-          <h2 className="absolute -top-5 text-2xl">
-            Premières expériences en entreprise
-          </h2>
-          <div className="lg:flex">
+        <div className="relative bg-orange5 mt-16 py-16 lg:py-30 px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
+          <div className="relative w-full max-w-lg lg:mb-12">
+            <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
+              Premières expériences <br></br> en entreprise
+            </h2>
+            <Image
+              className="absolute w-[50%] -ml-4 mt-2"
+              src="/icons/line-title.svg"
+              alt="icon"
+              width={400}
+              height={90}
+            />
+          </div>
+          <div className="lg:flex mt-10">
             <div className="my-auto lg:whitespace-nowrap">
               <p className="text-deepPurple !font-bold">Étés 2013 à 2018 </p>
               <p>Aide à l’administration des ventes à l’export</p>
               <p className="text-sm">Pandrol, Colombes</p>
             </div>
-            <div className="relative w-[50px] h-auto ml-8">
+            <div className="relative w-[50px] h-auto ml-8 -mr-4">
               <Image
                 src="/icons/line-y-2.svg"
                 alt="icon"
@@ -70,17 +79,26 @@ export default function Resume() {
                 className="object-contain"
               />
             </div>
-            <p className="mt-4 lg:mt-0 bg-beige0/60 my-auto p-8 rounded-xl w-full text-sm">
-              Enregistrement de commandes, suivi des paiements, traductions
-              techniques
+            <p className="mt-4 lg:mt-0 bg-beige1/60 my-auto p-8 lg:pr-12 lg:rounded-r-4xl max-lg:w-screen relative max-lg:left-1/2 max-lg:-translate-x-1/2 lg:w-full text-sm text-deepPurple">
+              Enregistrement de commandes, <br></br>suivi des paiements,{" "}
+              traductions techniques
             </p>
           </div>
         </div>
 
-        <div className="flex flex-col mt-16 gap-10 px-8 min-[1024px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
-          <h2 className="text-2xl">
-            La Licence en Langues <br></br> Étrangères Appliquées
-          </h2>
+        <div className="flex flex-col mt-16 lg:mt-30 gap-10 px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
+          <div className="relative w-full max-w-lg lg:mb-12">
+            <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
+              La Licence en Langues <br></br> Étrangères Appliquées
+            </h2>
+            <Image
+              className="absolute w-[50%] -ml-4 mt-2"
+              src="/icons/line-title.svg"
+              alt="icon"
+              width={400}
+              height={90}
+            />
+          </div>
           <div className="text-right lg:whitespace-nowrap">
             <p className="text-deepPurple !font-bold">2013-2016</p>
             <p>Licence LEA Anglais / Espagnol</p>
@@ -114,9 +132,20 @@ export default function Resume() {
           </div>
         </div>
 
-        <div className="relative bg-orange5 mt-16 py-15 px-8 min-[1024px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
-          <h2 className="absolute -top-5 text-2xl">La traduction</h2>
-          <div className="flex flex-col gap-20">
+        <div className="relative bg-orange5 mt-16 py-16 lg:py-30 px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
+          <div className="relative w-full max-w-lg lg:mb-12">
+            <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
+              La traduction
+            </h2>
+            <Image
+              className="absolute w-[50%] -ml-4 mt-2"
+              src="/icons/line-title.svg"
+              alt="icon"
+              width={400}
+              height={90}
+            />
+          </div>
+          <div className="flex flex-col gap-20 mt-15">
             <div className="my-auto lg:whitespace-nowrap">
               <p className="text-deepPurple !font-bold">2017 - 2019</p>
               <p>
@@ -126,12 +155,12 @@ export default function Resume() {
               <p className="text-sm">Université de Cergy-Pontoise</p>
             </div>
             <div className="flex flex-col flex-col-reverse lg:flex-row">
-              <p className="bg-beige0/60 my-auto p-8 rounded-xl w-full text-sm mt-4 lg:mt-0">
+              <p className="bg-beige1/60 my-auto p-8 lg:pl-12 lg:rounded-l-4xl max-lg:w-screen relative max-lg:left-1/2 max-lg:-translate-x-1/2 lg:w-full text-sm text-deepPurple mt-4 lg:mt-0">
                 Réalisation de traductions assermentées pour des particuliers,
                 des entreprises et des juristes, ou requises par la justice :
                 traductions juridiques, gestion de projet, accueil des clients
               </p>
-              <div className="relative w-[50px] h-auto mr-8">
+              <div className="relative w-[50px] h-auto mr-8 -ml-4">
                 <Image
                   src="/icons/line-y-2.svg"
                   alt="icon"
@@ -157,7 +186,7 @@ export default function Resume() {
                 <p>Traductrice freelance</p>
                 <p className="text-sm">Beauchamp</p>
               </div>
-              <div className="relative w-[50px] h-auto ml-8">
+              <div className="relative w-[50px] h-auto ml-8 -mr-4">
                 <Image
                   src="/icons/line-y-2.svg"
                   alt="icon"
@@ -165,46 +194,69 @@ export default function Resume() {
                   className="object-contain"
                 />
               </div>
-              <p className="bg-beige0/60 mt-4 lg:mt-0 my-auto p-8 rounded-xl w-full text-sm">
+              <p className="bg-beige1/60 mt-4 lg:mt-0 my-auto p-8 lg:pr-12 lg:rounded-r-4xl max-lg:w-screen relative max-lg:left-1/2 max-lg:-translate-x-1/2 lg:w-full text-sm text-deepPurple">
                 Traductions et relectures juridiques et techniques de l’anglais
-                vers le français : attestations, contrats, revues médicales,
-                etc.
+                vers le français : <br></br> attestations, contrats, revues
+                médicales, etc.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="py-15 px-8 min-[1024px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
-          <h2 className="text-2xl">La reconversion</h2>
+        <div className="py-15 px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
+          <div className="relative w-full max-w-lg lg:mb-12">
+            <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
+              La reconversion
+            </h2>
+            <Image
+              className="absolute w-[50%] -ml-4 mt-2"
+              src="/icons/line-title.svg"
+              alt="icon"
+              width={400}
+              height={90}
+            />
+          </div>
           <QandA data={questionsAnswers} />
         </div>
 
-        <div className="bg-brownBg py-15 px-8">
-          <h2 className="text-2xl min-[1024px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
-            Le développement web
-          </h2>
+        <div className="bg-brownBg py-15 px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
+          <div className="relative w-full max-w-lg lg:mb-12">
+            <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
+              Le développement web
+            </h2>
+            <Image
+              className="absolute w-[50%] -ml-4 mt-2"
+              src="/icons/line-title.svg"
+              alt="icon"
+              width={400}
+              height={90}
+            />
+          </div>
 
-          <div className="relative bg-beige0 p-8 lg:w-[800px] mx-auto rounded-xl mt-8">
-            <h3 className="absolute -top-2">La formation intensive</h3>
+          <div className="relative bg-beige0 p-8 xl:w-[800px] mx-auto rounded-xl mt-20">
+            <h3 className="absolute whitespace-nowrap -top-4 max-lg:left-0 text-2xl text-purple5 font-semibold">
+              La formation intensive
+            </h3>
             <div className="lg:flex">
               <div className="my-auto lg:whitespace-nowrap">
                 <p className="text-deepPurple !font-bold">
                   Octobre - Décembre 2022
                 </p>
                 <p>
-                  Formation intensive Développeur Full Stack <br></br>
+                  Formation intensive Développeur Full-stack <br></br>
                   Titre RNCP Niveau 6 (Bac +3)
                 </p>
                 <p className="text-sm mb-8">Ironahck, Paris</p>
                 <Link
                   className="max-lg:absolute bottom-20 whitespace-nowrap left-1/2 -translate-x-1/2 max-lg:block text-center bg-purple2 text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-6 max-lg:rounded-r-full rounded-l-full hover:bg-purple2/80 transition-colors duration-300"
-                  href="/"
+                  href="/portfolio/#ironhack"
                 >
                   Voir les projets
                 </Link>
                 <a
                   className="max-lg:absolute bottom-5 whitespace-nowrap left-1/2 -translate-x-1/2 max-lg:block text-center lg:-ml-4 bg-deepPurple text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-4 lg:mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
-                  href="/example.com"
+                  href="https://www.credential.net/7d024616-7967-460d-9a23-b6d93bc466c7#acc.QCYSROAv"
+                  target="_blank"
                 >
                   Voir la certification
                 </a>
@@ -229,12 +281,14 @@ export default function Resume() {
             </div>
           </div>
 
-          <div className="relative bg-beige0 p-8 lg:p-16 lg:w-[900px] mx-auto rounded-xl mt-14">
-            <h3 className="absolute -top-2 right-12">L'alternance</h3>
+          <div className="relative bg-beige0 p-8 lg:p-16 xl:w-[900px] mx-auto rounded-xl mt-14">
+            <h3 className="absolute -top-4 left-0 lg:right-15 text-2xl text-purple5 font-semibold">
+              L'alternance
+            </h3>
 
             <div className="relative lg:flex justify-between">
               <Image
-                className="absolute -left-5 animate-bounce"
+                className="hidden lg:block absolute -left-5 animate-bounce"
                 src="/icons/react.svg"
                 alt="icon"
                 width={80}
@@ -252,7 +306,7 @@ export default function Resume() {
                   Août 2023 - Août 2025
                 </p>
                 <p>
-                  Formation développeur d'application <br></br> Javascript -
+                  Formation développeur d'application <br></br> JavaScript -
                   React
                 </p>
                 <p className="text-sm mb-8">OpenClassrooms</p>
@@ -264,29 +318,38 @@ export default function Resume() {
 
         <div className="bg-gradient-to-b from-beige0 to-orange6 py-15 px-8 lg:pb-16">
           <div className="lg:w-[900px] mx-auto lg:flex justify-between">
-            <div className="lg:w-[48%] bg-orange6 max-lg:mb-8 rounded-3xl border border-white border-4 py-8 px-12">
-              <h3 className="text-2xl mb-8 text-deepPurple">
-                + d'informations
-              </h3>
-              <h4>Localisation</h4>
-              <p className="text-lg mb-4 text-deepPurple">95250 Beauchamp</p>
-              <h4>Je parle aussi</h4>
-              <p className="text-lg mb-4 text-deepPurple">
-                Anglais (niveau C1)
-              </p>
-              <h4>Je recherche</h4>
-              <p className="text-lg mb-4 text-deepPurple">
-                Un poste en CDI ou CDD
-              </p>
-              <h4>Où ça ?</h4>
-              <p className="text-lg mb-4 text-deepPurple">En IDF idéalement</p>
-              <h4>E-mail</h4>
-              <p className="text-lg mb-4 text-deepPurple">
-                cpoinson@hotmail.fr
-              </p>
+            <div className="lg:w-[48%] bg-orange6/70 max-lg:mb-8 rounded-3xl border border-white border-4 py-8 px-12">
+              <div className="relative w-full max-w-lg lg:mb-12">
+                <h2 className="text-deepPurple whitespace-nowrap max-sm:-ml-8 text-3xl lg:text-[2.5rem] font-black">
+                  + d'informations
+                </h2>
+                <Image
+                  className="absolute w-[50%] -ml-4 mt-2"
+                  src="/icons/line-title.svg"
+                  alt="icon"
+                  width={400}
+                  height={90}
+                />
+              </div>
+              <h4 className="text-sm font-bold text-deepPurple mt-10">
+                Localisation
+              </h4>
+              <p className="mb-4 text-deepPurple">95250 Beauchamp</p>
+              <h4 className="text-sm font-bold text-deepPurple">
+                Je parle aussi
+              </h4>
+              <p className="mb-4 text-deepPurple">Anglais (niveau C1)</p>
+              <h4 className="text-sm font-bold text-deepPurple">
+                Je recherche
+              </h4>
+              <p className="mb-4 text-deepPurple">Un poste en CDI ou CDD</p>
+              <h4 className="text-sm font-bold text-deepPurple">Où ça ?</h4>
+              <p className="mb-4 text-deepPurple">En IDF idéalement</p>
+              <h4 className="text-sm font-bold text-deepPurple">E-mail</h4>
+              <p className="mb-4 text-deepPurple">cpoinson@hotmail.fr</p>
             </div>
             <div className="lg:w-[48%] flex flex-col justify-between">
-              <div className="lg:h-[80%] bg-orange6 rounded-3xl border border-white border-4 py-8 px-8 lg:px-12">
+              <div className="lg:h-[80%] bg-orange6/70 rounded-3xl border border-white border-4 py-8 px-8 lg:px-12">
                 <div className="flex flex-wrap justify-center gap-2">
                   <p className="bg-orange1 w-fit py-1 px-3 rounded-lg text-sm">
                     HTML
@@ -311,7 +374,9 @@ export default function Resume() {
                   </p>
                 </div>
 
-                <h3 className="text-center mt-8 mb-4">Des connaissances en</h3>
+                <h3 className="text-center mt-8 mb-4 text-deepPurple font-bold text-xl">
+                  Des connaissances en
+                </h3>
                 <div className="flex flex-wrap justify-center gap-2">
                   <p className="bg-orange1 w-fit py-1 px-3 rounded-lg text-sm">
                     PHP
@@ -336,7 +401,7 @@ export default function Resume() {
                   </p>
                 </div>
 
-                <h3 className="text-center mt-8 mb-4">
+                <h3 className="text-center mt-8 mb-4 text-deepPurple font-bold text-xl">
                   En cours d'apprentissage
                 </h3>
                 <div className="flex flex-wrap justify-center gap-2">
@@ -349,8 +414,8 @@ export default function Resume() {
                 </div>
               </div>
               <a
-                className="max-lg:mt-8 h-[70px] lg:h-[15%] bg-purple2 text-beige0 text-3xl font-extrabold flex items-center justify-center rounded-full hover:bg-purple5 transition-colors duration-300"
-                href="/example.com"
+                className="max-lg:mt-8 h-[70px] lg:h-[15%] bg-purple2 text-beige0 text-3xl font-extrabold flex items-center justify-center rounded-2xl hover:bg-purple5 transition-colors duration-300"
+                href="mailto:cpoinson@hotmail.fr"
               >
                 Me contacter
               </a>
@@ -358,7 +423,18 @@ export default function Resume() {
           </div>
 
           <div className="lg:w-[900px] mx-auto">
-            <h2 className="text-2xl pt-30 mb-8">En résumé</h2>
+            <div className="relative w-full max-w-lg lg:mb-12 pt-30">
+              <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
+                En résumé
+              </h2>
+              <Image
+                className="absolute w-[50%] -ml-4 mt-2"
+                src="/icons/line-title.svg"
+                alt="icon"
+                width={400}
+                height={90}
+              />
+            </div>
             <div className="relative w-[50px] h-auto ml-8">
               <Image
                 src="/icons/line-y-2.svg"
@@ -367,7 +443,7 @@ export default function Resume() {
                 className="object-contain"
               />
             </div>
-            <div className="relative flex flex-wrap gap-4 text-sm lg:w-[600px]">
+            <div className="relative flex flex-wrap gap-4 text-sm lg:w-[600px] mt-10">
               <span className="bg-purple2 text-white px-6 py-1.5 rounded-full">
                 2 ans d'expérience en alternance
               </span>
@@ -375,7 +451,7 @@ export default function Resume() {
                 Disponible immédiatement
               </span>
               <span className="bg-orange4 px-6 py-1.5 rounded-full">
-                Javascript, React, Tailwind, une GRANDE capacité d'adaptation
+                JavaScript, React, Tailwind, une GRANDE capacité d'adaptation
               </span>
               <span className="bg-deepPurple text-white px-6 py-1.5 rounded-full">
                 I speak English

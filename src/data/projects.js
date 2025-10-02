@@ -1,5 +1,6 @@
 export const projectsData = [
   {
+    id:"iciformation",
     formation: "Ici Formation",
     projects: [
       {
@@ -63,6 +64,7 @@ export const projectsData = [
     ],
   },
   {
+    id:"openclassrooms",
     formation: "OpenClassrooms",
     projects: [
       {
@@ -131,7 +133,7 @@ export const projectsData = [
         ],
         image: "/images/projects/gameon.png",
         default: false,
-        tags: ["OpenClassrooms", "HTML", "CSS", "Javascript"],
+        tags: ["OpenClassrooms", "HTML", "CSS", "JavaScript"],
         link: null,
         github: "https://github.com/cpnsn/game_on",
       },
@@ -158,7 +160,7 @@ export const projectsData = [
         ],
         image: "/images/projects/fisheye.png",
         default: true,
-        tags: ["OpenClassrooms", "HTML", "CSS", "Javascript"],
+        tags: ["OpenClassrooms", "HTML", "CSS", "JavaScript"],
         link: null,
         github: "https://github.com/cpnsn/Front-End-Fisheye",
       },
@@ -183,7 +185,7 @@ export const projectsData = [
         ],
         image: "/images/projects/les-petits-plats.png",
         default: true,
-        tags: ["OpenClassrooms", "HTML", "Bootstrap", "Javascript"],
+        tags: ["OpenClassrooms", "HTML", "Bootstrap", "JavaScript"],
         link: null,
         github: "https://github.com/cpnsn/Petits_Plats_P7",
       },
@@ -208,7 +210,7 @@ export const projectsData = [
         ],
         image: "/images/projects/billed.png",
         default: false,
-        tags: ["OpenClassrooms", "HTML", "CSS", "Javascript"],
+        tags: ["OpenClassrooms", "HTML", "CSS", "JavaScript"],
         link: null,
         github: "https://github.com/cpnsn/Billed-app-FR-Front",
       },
@@ -342,6 +344,7 @@ export const projectsData = [
     ],
   },
   {
+    id:"ironhack",
     formation: "Ironhack",
     projects: [
       {
@@ -349,7 +352,7 @@ export const projectsData = [
         title: "Rock Paper Star",
         year: "2022",
         summary:
-          "Ce pierre-feuille-ciseaux sur le thème de Star Wars est le premier projet sur lequel j’ai travaillé dans le cadre de la formation intensive Développeur Full-Stack d’Ironhack. Le jeu se joue directement dans le navigateur, avec une ambiance sonore et visuelle inspirée de l’univers galactique.",
+          "Ce pierre-feuille-ciseaux sur le thème de Star Wars est le premier projet sur lequel j’ai travaillé dans le cadre de la formation intensive Développeur Full-stack d’Ironhack. Le jeu se joue directement dans le navigateur, avec une ambiance sonore et visuelle inspirée de l’univers galactique.",
         goal: "L’objectif était de concevoir et développer un jeu simple mais complet en HTML, CSS et JavaScript, en respectant les bonnes pratiques de code (KISS et DRY). Le projet devait être versionné sur GitHub, inclure des commits réguliers, puis être déployé sur GitHub Pages, le tout en 5 jours.",
         features: [
           "Jeu de pierre-feuille-ciseaux revisité avec un univers Star Wars",
@@ -364,7 +367,7 @@ export const projectsData = [
         ],
         image: "/images/projects/rock-paper-star.png",
         default: true,
-        tags: ["Ironhack", "HTML", "CSS", "Javascript"],
+        tags: ["Ironhack", "HTML", "CSS", "JavaScript"],
         link: "https://cpnsn.github.io/Ironhack-project-1-Rock-Paper-Scissors/",
         github:
           "https://github.com/cpnsn/Ironhack-project-1-Rock-Paper-Scissors",
@@ -374,7 +377,7 @@ export const projectsData = [
         title: "Todo App",
         year: "2022",
         summary:
-          "Todo est une application de gestion de tâches développée dans le cadre du second projet de la formation intensive Développeur Full-Stack d’Ironhack. Elle permet aux utilisateurs de s’organiser en créant, modifiant et supprimant leurs tâches, avec un système d’authentification sécurisé.",
+          "Todo est une application de gestion de tâches développée dans le cadre du second projet de la formation intensive Développeur Full-stack d’Ironhack. Elle permet aux utilisateurs de s’organiser en créant, modifiant et supprimant leurs tâches, avec un système d’authentification sécurisé.",
         goal: "Concevoir une application web complète en utilisant Express et Mongoose, tout en mettant en place les fonctionnalités essentielles d’une application moderne : authentification, gestion de données avec validation, et déploiement en ligne.",
         features: [
           "Création, affichage, modification et suppression de tâches (CRUD complet)",
@@ -394,7 +397,7 @@ export const projectsData = [
           "Ironhack",
           "HTML",
           "CSS",
-          "Javascript",
+          "JavaScript",
           "Node.js",
           "Express.js",
           "Mongoose",
@@ -408,18 +411,18 @@ export const projectsData = [
         title: "MuSeek",
         year: "2022",
         summary:
-          "Ce troisième et dernier projet de la formation intensive Développeur Full-Stack d’Ironhack, réalisé en binôme, consistait à développer une application web permettant de mettre en relation des musiciens et des groupes à la recherche de nouveaux talents. C’était l’occasion de mettre en pratique l’ensemble des compétences acquises, aussi bien en frontend qu’en backend, avec la stack MERN.",
-        goal: "Concevoir une application complète et moderne, avec un frontend en React et un backend REST API sous Express/MongoDB. L’application devait gérer l’authentification des utilisateurs, proposer des actions CRUD sur plusieurs modèles et être déployée en ligne.",
+          "Ce troisième et dernier projet de la formation intensive Développeur Full-stack d’Ironhack, réalisé en binôme, consistait à développer une application web permettant de mettre en relation des musiciens et des groupes à la recherche de nouveaux talents. C’était l’occasion de mettre en pratique l’ensemble des compétences acquises, aussi bien en front-end qu’en back-end, avec la stack MERN.",
+        goal: "Concevoir une application complète et moderne, avec un front-end en React et un back-end REST API sous Express/MongoDB. L’application devait gérer l’authentification des utilisateurs, proposer des actions CRUD sur plusieurs modèles et être déployée en ligne.",
         features: [
           "Inscription, connexion et déconnexion sécurisées (mots de passe chiffrés, gestion des autorisations)",
           "Création, lecture, modification et suppression de contenus",
           "Trois modèles minimum : utilisateur, musicien/groupe, et un modèle supplémentaire lié à la logique métier",
-          "Gestion centralisée des erreurs et validation des données côté backend",
+          "Gestion centralisée des erreurs et validation des données côté back-end",
         ],
         challenges: [
-          "Mettre en place deux dépôts GitHub distincts pour séparer frontend et backend, tout en assurant leur bonne communication",
+          "Mettre en place deux dépôts GitHub distincts pour séparer front-end et back-end, tout en assurant leur bonne communication",
           "Structurer une application React avec plusieurs vues tout en maintenant la fluidité de l’expérience utilisateur (SPA)",
-          "Implémenter un backend robuste avec validation et gestion centralisée des erreurs",
+          "Implémenter un back-end robuste avec validation et gestion centralisée des erreurs",
         ],
         image: "/images/projects/museek.png",
         default: true,

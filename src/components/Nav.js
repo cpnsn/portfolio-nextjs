@@ -30,11 +30,11 @@ export default function Nav() {
 
   return (
     <nav
-      className={`z-20 fixed top-8 left-1/2 -translate-x-1/2 flex justify-center gap-2 lg:gap-4 transition-all duration-1000 ${
+      className={`z-20 w-screen lg:w-fit fixed top-8 left-1/2 -translate-x-1/2 flex justify-center gap-2 lg:gap-4 transition-all duration-1000 ${
         showNav
           ? `translate-y-0 ${
               isScrollingUp
-                ? "bg-beige0/95 px-10 py-6 rounded-full w-fit backdrop-blur-sm ring-2 ring-white"
+                ? "min-lg:bg-beige0/95 px-10 py-6 rounded-full min-lg:backdrop-blur-sm min-lg:ring-2 min-lg:ring-white"
                 : ""
             }`
           : "-translate-y-[calc(100%+2rem)]"
