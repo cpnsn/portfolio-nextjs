@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
             <Image
               className="mx-auto h-4 w-auto my-2"
               src="/icons/line-x-1.svg"
-              alt="icon"
+              alt="icône"
               width={50}
               height={50}
             />

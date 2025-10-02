@@ -10,7 +10,7 @@ export default function Legal() {
         <Image
           className="absolute w-[50%] -ml-6 mt-2"
           src="/icons/line-title.svg"
-          alt="icon"
+          alt="icône"
           width={400}
           height={90}
         />

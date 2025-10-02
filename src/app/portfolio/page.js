@@ -15,7 +15,7 @@ export default function Portfolio() {
         <Image
           className="hidden lg:block h-[300px]"
           src="/icons/line-y-1.svg"
-          alt="icon"
+          alt="icône"
           width={100}
           height={100}
         />
@@ -33,14 +33,14 @@ export default function Portfolio() {
         <Image
           className="absolute max-lg:-top-10 lg:bottom-10 -left-5 lg:left-10 animate-bounce"
           src="/icons/react.svg"
-          alt="icon"
+          alt="icône"
           width={70}
           height={70}
         />
         <Image
           className="hidden lg:block absolute top-10 left-[35%]"
           src="/icons/javascript.svg"
-          alt="icon"
+          alt="icône"
           width={60}
           height={60}
         />
@@ -57,7 +57,7 @@ export default function Portfolio() {
                 <Image
                   className="absolute w-[50%] -ml-4 mt-2"
                   src="/icons/line-title.svg"
-                  alt="icon"
+                  alt="icône"
                   width={400}
                   height={90}
                 />
@@ -75,9 +75,8 @@ export default function Portfolio() {
                 <span className="font-bold text-xl">Voir le CV</span>
               </p>
               <Image
-                className=""
                 src="/icons/more-purple.svg"
-                alt="icon"
+                alt="icône"
                 width={50}
                 height={50}
               />
@@ -91,9 +90,8 @@ export default function Portfolio() {
                 <span className="font-bold text-xl">Me contacter</span>
               </p>
               <Image
-                className=""
                 src="/icons/contact.svg"
-                alt="icon"
+                alt="icône"
                 width={50}
                 height={50}
               />

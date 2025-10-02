@@ -24,7 +24,7 @@ export default function Home() {
             <Image
               className="w-full my-4 lg:my-8 -ml-3"
               src="/icons/line-x-2.svg"
-              alt="icon"
+              alt="icône"
               width={100}
               height={100}
             />
@@ -49,7 +49,7 @@ export default function Home() {
               <Image
                 className="absolute -top-10 -left-5"
                 src="/icons/react.svg"
-                alt="icon"
+                alt="icône"
                 width={90}
                 height={90}
               />
@@ -60,7 +60,7 @@ export default function Home() {
               <Image
                 className="absolute -top-10 -right-5"
                 src="/icons/javascript.svg"
-                alt="icon"
+                alt="icône"
                 width={90}
                 height={90}
               />
@@ -90,21 +90,21 @@ export default function Home() {
           <Image
             className="absolute left-0 animate-bounce"
             src="/icons/react.svg"
-            alt="icon"
+            alt="icône"
             width={90}
             height={90}
           />
           <Image
             className="absolute right-10 top-40 hover:animate-pulse"
             src="/icons/javascript.svg"
-            alt="icon"
+            alt="icône"
             width={90}
             height={90}
           />
           <Image
             className="absolute bottom-0 left-20"
             src="/icons/tailwind.svg"
-            alt="icon"
+            alt="icône"
             width={90}
             height={90}
           />
@@ -120,7 +120,7 @@ export default function Home() {
             <Image
               className="absolute w-[50%] -ml-4 mt-2"
               src="/icons/line-title.svg"
-              alt="icon"
+              alt="icône"
               width={400}
               height={90}
             />
@@ -138,7 +138,7 @@ export default function Home() {
             <Image
               className="absolute w-[50%] -ml-4 mt-2"
               src="/icons/line-title.svg"
-              alt="icon"
+              alt="icône"
               width={400}
               height={90}
             />
@@ -147,7 +147,7 @@ export default function Home() {
             <Image
               className="mx-auto lg:absolute lg:w-[35%] lg:rotate-10 top-1/2 lg:-translate-y-1/2 right-[10%] shadow-sm rounded-3xl border border-4 border-brownBg hover:opacity-90"
               src="/images/cv.png"
-              alt="icon"
+              alt="icône"
               width={400}
               height={90}
             />
@@ -163,23 +163,23 @@ export default function Home() {
         <Image
           className="hidden lg:block w-full -mb-5"
           src="/icons/section-purple.svg"
-          alt="icon"
+          alt="icône"
           width={400}
           height={90}
         />
         <div className="bg-orange5 py-30 px-8">
           <div className="hidden lg:flex gap-30 justify-center align-center mb-20">
-            <Image src="/icons/react.svg" alt="icon" width={90} height={90} />
+            <Image src="/icons/react.svg" alt="icône" width={90} height={90} />
             <Image
               className="animate-bounce"
               src="/icons/javascript.svg"
-              alt="icon"
+              alt="icône"
               width={90}
               height={90}
             />
             <Image
               src="/icons/tailwind.svg"
-              alt="icon"
+              alt="icône"
               width={90}
               height={90}
             />
@@ -191,14 +191,14 @@ export default function Home() {
             <Image
               className="hidden lg:block w-[200px]"
               src="/icons/arrow-1.svg"
-              alt="icon"
+              alt="icône"
               width={90}
               height={90}
             />
             <Image
               className="lg:hidden w-[50px]"
               src="/icons/arrow-1-mobile.svg"
-              alt="icon"
+              alt="icône"
               width={90}
               height={90}
             />
@@ -211,14 +211,14 @@ export default function Home() {
             <Image
               className="hidden lg:block w-[200px] scale-x-[-1]"
               src="/icons/arrow-1.svg"
-              alt="icon"
+              alt="icône"
               width={90}
               height={90}
             />
             <Image
               className="lg:hidden w-[50px] scale-x-[-1]"
               src="/icons/arrow-1-mobile.svg"
-              alt="icon"
+              alt="icône"
               width={90}
               height={90}
             />
@@ -226,7 +226,7 @@ export default function Home() {
           <Image
             className="lg:hidden mx-auto mt-20 animate-bounce"
             src="/icons/react.svg"
-            alt="icon"
+            alt="icône"
             width={90}
             height={90}
           />

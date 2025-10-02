@@ -42,7 +42,6 @@ export default function GridCarousel({ data }) {
       <div className="flex justify-center gap-4">
         <button className="custom-prev p-3 rounded-full border border-purple2 w-[50px] h-[50px] hover:-translate-y-1 ease-in-out duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-default disabled:translate-y-0">
           <Image
-            className=""
             src="/icons/arrow-prev.svg"
             alt="{item.title}"
             width={30}
@@ -51,7 +50,6 @@ export default function GridCarousel({ data }) {
         </button>
         <button className="custom-next p-3 rounded-full border border-purple2 w-[50px] h-[50px] hover:-translate-y-1 ease-in-out duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-default disabled:translate-y-0">
           <Image
-            className=""
             src="/icons/arrow-next.svg"
             alt="{item.title}"
             width={30}

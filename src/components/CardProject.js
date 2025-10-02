@@ -27,7 +27,7 @@ export default function CardProject({ item, index }) {
                   ? "line-card-purple.svg"
                   : "line-card-orange.svg"
               }`}
-              alt="icon"
+              alt="icône"
               width={100}
               height={100}
             />
@@ -53,9 +53,8 @@ export default function CardProject({ item, index }) {
 
         {/* <div className="opacity-0 group-hover:opacity-100 absolute left-1/2 -translate-x-1/2 bottom-6 bg-purple2 hover:-translate-y-1 hover:bg-purple5 ease-in-out transition duration-300 w-[90px] h-[40px] rounded-full flex justify-center">
           <Image
-            className=""
             src="/icons/more-white.svg"
-            alt="icon"
+            alt="icône"
             width={15}
             height={15}
           />

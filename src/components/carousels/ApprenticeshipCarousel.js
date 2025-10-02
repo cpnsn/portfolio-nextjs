@@ -32,7 +32,7 @@ export default function ApprenticeshipCarousel({ data }) {
         }}
       >
         {data.map((item, index) => (
-          <SwiperSlide key={item.id} className="">
+          <SwiperSlide key={item.id}>
             <div className="lg:flex mb-2">
               <div>
                 <h4 className="text-deepPurple font-bold text-xl">
@@ -61,14 +61,14 @@ export default function ApprenticeshipCarousel({ data }) {
                 onClick={goToNextOrPrev}
                 className="max-lg:mx-auto w-[40px] h-[40px] my-auto cursor-pointer hover:animate-pulse"
                 src="/icons/arrow-next.svg"
-                alt="icon"
+                alt="icône"
                 width={100}
                 height={100}
               />
               <Image
                 className="hidden lg:block w-[20px] h-[300px] mx-6"
                 src="/icons/line-y-2.svg"
-                alt="icon"
+                alt="icône"
                 width={50}
                 height={50}
               />

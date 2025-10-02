@@ -24,7 +24,7 @@ export default function Resume() {
         <div className="max-[375px]:hidden relative w-[50px] h-auto">
           <Image
             src="/icons/line-y-2.svg"
-            alt="icon"
+            alt="icône"
             fill
             className="object-contain"
           />
@@ -60,7 +60,7 @@ export default function Resume() {
             <Image
               className="absolute w-[50%] -ml-4 mt-2"
               src="/icons/line-title.svg"
-              alt="icon"
+              alt="icône"
               width={400}
               height={90}
             />
@@ -74,7 +74,7 @@ export default function Resume() {
             <div className="relative w-[50px] h-auto ml-8 -mr-4">
               <Image
                 src="/icons/line-y-2.svg"
-                alt="icon"
+                alt="icône"
                 fill
                 className="object-contain"
               />
@@ -94,7 +94,7 @@ export default function Resume() {
             <Image
               className="absolute w-[50%] -ml-4 mt-2"
               src="/icons/line-title.svg"
-              alt="icon"
+              alt="icône"
               width={400}
               height={90}
             />
@@ -106,7 +106,7 @@ export default function Resume() {
           </div>
           <Image
             src="/icons/arrow-2.svg"
-            alt="icon"
+            alt="icône"
             width={300}
             height={300}
             className="ml-auto lg:mx-auto max-lg:w-[200px]"
@@ -120,7 +120,7 @@ export default function Resume() {
           </div>
           <Image
             src="/icons/arrow-3.svg"
-            alt="icon"
+            alt="icône"
             width={300}
             height={300}
             className="lg:mx-auto max-lg:w-[200px]"
@@ -140,7 +140,7 @@ export default function Resume() {
             <Image
               className="absolute w-[50%] -ml-4 mt-2"
               src="/icons/line-title.svg"
-              alt="icon"
+              alt="icône"
               width={400}
               height={90}
             />
@@ -163,7 +163,7 @@ export default function Resume() {
               <div className="relative w-[50px] h-auto mr-8 -ml-4">
                 <Image
                   src="/icons/line-y-2.svg"
-                  alt="icon"
+                  alt="icône"
                   fill
                   className="object-contain"
                 />
@@ -189,7 +189,7 @@ export default function Resume() {
               <div className="relative w-[50px] h-auto ml-8 -mr-4">
                 <Image
                   src="/icons/line-y-2.svg"
-                  alt="icon"
+                  alt="icône"
                   fill
                   className="object-contain"
                 />
@@ -211,7 +211,7 @@ export default function Resume() {
             <Image
               className="absolute w-[50%] -ml-4 mt-2"
               src="/icons/line-title.svg"
-              alt="icon"
+              alt="icône"
               width={400}
               height={90}
             />
@@ -227,7 +227,7 @@ export default function Resume() {
             <Image
               className="absolute w-[50%] -ml-4 mt-2"
               src="/icons/line-title.svg"
-              alt="icon"
+              alt="icône"
               width={400}
               height={90}
             />
@@ -264,7 +264,7 @@ export default function Resume() {
               <div className="relative w-[50px] h-auto ml-8">
                 <Image
                   src="/icons/line-y-2.svg"
-                  alt="icon"
+                  alt="icône"
                   fill
                   className="object-contain hidden lg:block"
                 />
@@ -290,14 +290,14 @@ export default function Resume() {
               <Image
                 className="hidden lg:block absolute -left-5 animate-bounce"
                 src="/icons/react.svg"
-                alt="icon"
+                alt="icône"
                 width={80}
                 height={80}
               />
               <Image
                 className="hidden lg:block w-[50%]"
                 src="/icons/logos.svg"
-                alt="icon"
+                alt="icône"
                 width={500}
                 height={500}
               />
@@ -326,7 +326,7 @@ export default function Resume() {
                 <Image
                   className="absolute w-[50%] -ml-4 mt-2"
                   src="/icons/line-title.svg"
-                  alt="icon"
+                  alt="icône"
                   width={400}
                   height={90}
                 />
@@ -430,7 +430,7 @@ export default function Resume() {
               <Image
                 className="absolute w-[50%] -ml-4 mt-2"
                 src="/icons/line-title.svg"
-                alt="icon"
+                alt="icône"
                 width={400}
                 height={90}
               />
@@ -438,7 +438,7 @@ export default function Resume() {
             <div className="relative w-[50px] h-auto ml-8">
               <Image
                 src="/icons/line-y-2.svg"
-                alt="icon"
+                alt="icône"
                 fill
                 className="object-contain"
               />
@@ -459,7 +459,7 @@ export default function Resume() {
               <Image
                 className="hidden lg:block absolute -right-30 -top-35"
                 src="/icons/arrow-4.svg"
-                alt="icon"
+                alt="icône"
                 width={200}
                 height={200}
               />

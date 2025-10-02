@@ -33,7 +33,7 @@ export default function Projet({ params }) {
                 <Image
                   className="absolute w-[50%] -ml-4 mt-2"
                   src="/icons/line-title.svg"
-                  alt="icon"
+                  alt="icône"
                   width={400}
                   height={90}
                 />
@@ -53,10 +53,10 @@ export default function Projet({ params }) {
           </div>
 
           <div className="lg:flex justify-between items-stretch">
-            <div className="lg:w-[48%] xl:w-[33%] bg-beige0 p-10 border border-white border-4 max-lg:-mt-10 max-lg:rounded-tl-4xl rounded-tr-4xl lg:rounded-bl-4xl">
+            <div className="flex flex-col lg:w-[48%] xl:w-[33%] bg-beige0 p-10 border border-white border-4 max-lg:-mt-10 max-lg:rounded-tl-4xl rounded-tr-4xl lg:rounded-bl-4xl">
               <h2 className="text-deepPurple text-2xl mb-4">Objectif</h2>
               <p>{project.goal}</p>
-              <div className="flex flex-wrap justify-center mt-8 max-lg:mb-8">
+              <div className="flex flex-wrap justify-center mt-8 lg:mt-auto max-lg:mb-8">
                 {project.tags.slice(1).map((item, index) => (
                   <>
                     <span
@@ -65,23 +65,25 @@ export default function Projet({ params }) {
                     >
                       {item}
                     </span>
-                    <Image
-                      className="mx-2"
-                      src="/icons/punctuation.svg"
-                      alt="icon"
-                      width={10}
-                      height={10}
-                      quality={100}
-                    />
+                    {index < project.tags.slice(1).length - 1 && (
+                      <Image
+                        className="mx-2"
+                        src="/icons/punctuation.svg"
+                        alt="icône"
+                        width={10}
+                        height={10}
+                        quality={100}
+                      />
+                    )}
                   </>
                 ))}
               </div>
             </div>
             <div className="relative lg:w-[49%] xl:w-[64%] max-lg:-mt-8 bg-orange5 lg:bg-beige0 p-10 border border-white border-4 max-lg:rounded-tr-4xl rounded-tl-4xl max-lg:rounded-bl-4xl rounded-br-4xl">
               <Image
-                className="hidden lg:block absolute -left-13 -top-13 animate-bounce"
+                className="hidden lg:block absolute -left-13 -top-13 animate-bounce hover:animate-none transition-transform duration-500 ease-in-out hover:-translate-y-2"
                 src="/icons/react.svg"
-                alt="icon"
+                alt="icône"
                 width={80}
                 height={80}
                 quality={100}
@@ -92,7 +94,7 @@ export default function Projet({ params }) {
                   <Image
                     className="mx-2"
                     src="/icons/punctuation.svg"
-                    alt="icon"
+                    alt="icône"
                     width={10}
                     height={10}
                     quality={100}
@@ -110,7 +112,7 @@ export default function Projet({ params }) {
                   <Image
                     className="mx-2"
                     src="/icons/punctuation.svg"
-                    alt="icon"
+                    alt="icône"
                     width={10}
                     height={10}
                     quality={100}
@@ -144,7 +146,7 @@ export default function Projet({ params }) {
               <Image
                 className="absolute w-[50%] -ml-4 mt-2"
                 src="/icons/line-title.svg"
-                alt="icon"
+                alt="icône"
                 width={400}
                 height={90}
               />
@@ -159,7 +161,7 @@ export default function Projet({ params }) {
               <Image
                 className="absolute w-[50%] -ml-4 mt-2"
                 src="/icons/line-title.svg"
-                alt="icon"
+                alt="icône"
                 width={400}
                 height={90}
               />
@@ -176,9 +178,8 @@ export default function Projet({ params }) {
                 <span className="font-bold text-xl">Voir le CV</span>
               </p>
               <Image
-                className=""
                 src="/icons/more-purple.svg"
-                alt="icon"
+                alt="icône"
                 width={50}
                 height={50}
               />
@@ -192,9 +193,8 @@ export default function Projet({ params }) {
                 <span className="font-bold text-xl">Me contacter</span>
               </p>
               <Image
-                className=""
                 src="/icons/contact.svg"
-                alt="icon"
+                alt="icône"
                 width={50}
                 height={50}
               />
