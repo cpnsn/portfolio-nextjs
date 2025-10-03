@@ -34,7 +34,7 @@ export default function Nav() {
         showNav
           ? `translate-y-0 ${
               isScrollingUp
-                ? "min-lg:bg-beige0/95 px-10 py-6 rounded-full min-lg:backdrop-blur-sm min-lg:ring-2 min-lg:ring-white"
+                ? "min-lg:bg-beige0/95 px-8 p-4 rounded-4xl min-lg:backdrop-blur-sm min-lg:ring-2 min-lg:ring-white"
                 : ""
             }`
           : "-translate-y-[calc(100%+2rem)]"

@@ -1,8 +1,15 @@
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { projectsData } from "@/data/projects";
 import MobileOnlyCarousel from "@/components/carousels/projects/MobileOnlyCarousel";
 import DesktopMobileCarousel from "@/components/carousels/projects/DesktopMobileCarousel";
+
+export const metadata = {
+  title: "Portfolio",
+  description:
+    "Parcourez mon portfolio et découvrez les projets sur lesquels j'ai eu l'occasion de travailler",
+};
 
 export default function Projet({ params }) {
   const { projectId } = params;
@@ -58,7 +65,7 @@ export default function Projet({ params }) {
               <p>{project.goal}</p>
               <div className="flex flex-wrap justify-center mt-8 lg:mt-auto max-lg:mb-8">
                 {project.tags.slice(1).map((item, index) => (
-                  <>
+                  <React.Fragment key={index}>
                     <span
                       key={index}
                       className="font-extralight text-deepPurple"
@@ -75,7 +82,7 @@ export default function Projet({ params }) {
                         quality={100}
                       />
                     )}
-                  </>
+                  </React.Fragment>
                 ))}
               </div>
             </div>
@@ -90,7 +97,7 @@ export default function Projet({ params }) {
               />
               <h2 className="text-deepPurple text-2xl mb-4">Fonctionnalités</h2>
               {project.features.map((item, index) => (
-                <div className="flex mb-2">
+                <div key={index} className="flex mb-2">
                   <Image
                     className="mx-2"
                     src="/icons/punctuation.svg"
@@ -108,7 +115,7 @@ export default function Projet({ params }) {
                 Défis techniques
               </h2>
               {project.challenges.map((item, index) => (
-                <div className="flex mb-2">
+                <div key={index} className="flex mb-2">
                   <Image
                     className="mx-2"
                     src="/icons/punctuation.svg"

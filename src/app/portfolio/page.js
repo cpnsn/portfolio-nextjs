@@ -3,6 +3,11 @@ import Image from "next/image";
 import { projectsData } from "@/data/projects";
 import MobileOnlyCarousel from "@/components/carousels/projects/MobileOnlyCarousel";
 
+export const metadata = {
+  title: 'Portfolio',
+  description: 'Parcourez mon portfolio et découvrez les projets sur lesquels j\'ai eu l\'occasion de travailler'
+};
+
 export default function Portfolio() {
   const projectsByCategory = projectsData.map((category) => category);
 
@@ -49,7 +54,7 @@ export default function Portfolio() {
       <main className="z-10 relative bg-gradient-to-b from-beige0 to-beige1 pt-[3%] px-[3%] rounded-t-[3rem] lg:rounded-t-[6rem]">
         <div className="flex flex-col gap-10 lg:gap-20 bg-brownBg rounded-[2.5rem] lg:rounded-[4.5rem] py-10 lg:py-25 mx-auto px-[calc(2rem-3%)] min-[1024px]:px-[7%] min-[1280px]:px-[17%] min-[2000px]:px-[27%]">
           {projectsByCategory.map((cat) => (
-            <div id={cat.id}>
+            <div key={cat.id} id={cat.id}>
               <div className="relative w-full max-w-lg sm:mb-12">
                 <h2 className="text-deepPurple mt-8 text-3xl lg:text-[2.5rem] font-black">
                   {cat.formation}

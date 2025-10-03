@@ -31,7 +31,7 @@ export default function ApprenticeshipCarousel({ data }) {
           },
         }}
       >
-        {data.map((item, index) => (
+        {data.map((item) => (
           <SwiperSlide key={item.id}>
             <div className="lg:flex mb-2">
               <div>

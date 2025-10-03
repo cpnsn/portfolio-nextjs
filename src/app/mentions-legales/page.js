@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+export const metadata = {
+    title: 'Mentions légales',
+    description: 'Mentions légales | Éditeur | Hébergeur | Propriété intellectuelle'
+  };
+
 export default function Legal() {
   return (
     <div className="bg-beige0 pt-24 lg:pt-36 px-8 min-[768px]:px-[10%] min-[1280px]:px-[20%] min-[2000px]:px-[30%] min-h-screen">

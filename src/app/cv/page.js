@@ -4,6 +4,12 @@ import QandA from "@/components/QandA";
 import { apprenticeshipData } from "@/data/apprenticeship";
 import ApprenticeshipCarousel from "@/components/carousels/ApprenticeshipCarousel";
 
+export const metadata = {
+  title: "CV",
+  description:
+    "Parcourez mon CV et découvrez mon parcours jusqu'à ma reconversion dans le développement web",
+};
+
 export default function Resume() {
   const questionsAnswers = [
     {
@@ -269,15 +275,17 @@ export default function Resume() {
                   className="object-contain hidden lg:block"
                 />
               </div>
-              <p className="my-auto lg:p-8 max-lg:mb-35 text-sm">
-                Une formation intensive de trois mois pour valider mon choix de
-                reconversion et ma décision de me spécialiser dans le
-                développement front-end, tout en découvrant le back-end.
+              <div className="my-auto lg:p-8 max-lg:mb-35 text-sm">
+                <p>
+                  Une formation intensive de trois mois pour valider mon choix
+                  de reconversion et ma décision de me spécialiser dans le
+                  développement front-end, tout en découvrant le back-end.
+                </p>
                 <p className="mt-4 !font-medium">
                   HTML, CSS, Javascript, React <br></br> Express, Node, MongoDB,
                   Axios
                 </p>
-              </p>
+              </div>
             </div>
           </div>
 
@@ -318,19 +326,10 @@ export default function Resume() {
 
         <div className="bg-gradient-to-b from-beige0 to-orange6 py-15 px-8 lg:pb-16">
           <div className="lg:w-[900px] mx-auto lg:flex justify-between">
-            <div className="lg:w-[48%] bg-orange6/70 max-lg:mb-8 rounded-3xl border border-white border-4 py-8 px-12">
-              <div className="relative w-full max-w-lg lg:mb-12">
-                <h2 className="text-deepPurple whitespace-nowrap max-sm:-ml-8 text-3xl lg:text-[2.5rem] font-black">
-                  + d'informations
-                </h2>
-                <Image
-                  className="absolute w-[50%] -ml-4 mt-2"
-                  src="/icons/line-title.svg"
-                  alt="icône"
-                  width={400}
-                  height={90}
-                />
-              </div>
+            <div className="shadow-sm lg:w-[48%] bg-orange6/70 max-lg:mb-8 rounded-3xl border border-white border-4 py-8 px-12">
+              <h3 className="text-2xl text-deepPurple font-semibold">
+                Plus d'informations
+              </h3>
               <h4 className="text-sm font-bold text-deepPurple mt-10">
                 Localisation
               </h4>
@@ -349,7 +348,7 @@ export default function Resume() {
               <p className="mb-4 text-deepPurple">cpoinson@hotmail.fr</p>
             </div>
             <div className="lg:w-[48%] flex flex-col justify-between">
-              <div className="lg:h-[80%] bg-orange6/70 rounded-3xl border border-white border-4 py-8 px-8 lg:px-12">
+              <div className="shadow-sm lg:h-[80%] bg-orange6/70 rounded-3xl border border-white border-4 py-8 px-8 lg:px-12">
                 <div className="flex flex-wrap justify-center gap-2">
                   <p className="bg-orange1 w-fit py-1 px-3 rounded-lg text-sm">
                     HTML
@@ -374,7 +373,7 @@ export default function Resume() {
                   </p>
                 </div>
 
-                <h3 className="text-center mt-8 mb-4 text-deepPurple font-bold text-xl">
+                <h3 className="text-lg text-deepPurple font-semibold text-center mt-6 mb-2">
                   Des connaissances en
                 </h3>
                 <div className="flex flex-wrap justify-center gap-2">
@@ -401,7 +400,7 @@ export default function Resume() {
                   </p>
                 </div>
 
-                <h3 className="text-center mt-8 mb-4 text-deepPurple font-bold text-xl">
+                <h3 className="text-lg text-deepPurple font-semibold text-center mt-6 mb-2">
                   En cours d'apprentissage
                 </h3>
                 <div className="flex flex-wrap justify-center gap-2">
@@ -414,7 +413,7 @@ export default function Resume() {
                 </div>
               </div>
               <a
-                className="max-lg:mt-8 h-[70px] lg:h-[15%] bg-purple2 text-beige0 text-3xl font-extrabold flex items-center justify-center rounded-2xl hover:bg-purple5 transition-colors duration-300"
+                className="shadow-sm w-[80%] mx-auto max-lg:mt-8 h-[70px] lg:h-[15%] bg-purple2 text-beige0 text-3xl font-extrabold flex items-center justify-center rounded-full hover:bg-purple5 transition-colors duration-300"
                 href="mailto:cpoinson@hotmail.fr"
               >
                 Me contacter
