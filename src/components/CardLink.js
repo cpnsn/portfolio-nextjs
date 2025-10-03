@@ -7,14 +7,14 @@ export default function CardLink({ href, text, color }) {
     <div>
       {isExternal ? (
         <a
-          className={`${color} py-10 mt-4 rounded-sm flex justify-center text-3xl font-black`}
+          className={`${color} py-6 mt-2 rounded-lg flex justify-center text-3xl text-deepPurple font-black`}
           href={href}
         >
           {text}
         </a>
       ) : (
         <Link
-          className={`${color} py-10 mt-4 rounded-sm flex justify-center text-3xl font-black`}
+          className={`${color} py-6 mt-2 rounded-lg flex justify-center text-3xl text-deepPurple font-black`}
           href={href}
         >
           {text}

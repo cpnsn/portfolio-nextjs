@@ -11,11 +11,11 @@ export default function Home() {
   );
 
   return (
-    <div className="bg-beige0 pt-24 lg:pt-36">
-      <header className="lg:sticky top-24 lg:top-36 flex mb-30 px-8 min-[768px]:px-[10%] min-[1280px]:px-[20%] min-[2000px]:px-[30%]">
-        <div className="lg:w-[70%]">
+    <div className="bg-beige0 pt-30 lg:pt-36">
+      <header className="lg:sticky top-24 lg:top-36 flex mb-20 lg:mb-30 px-8 min-[768px]:px-[10%] min-[1280px]:px-[20%] min-[2000px]:px-[30%]">
+        <div className="lg:w-[70%] relative">
           <div className="w-fit">
-            <h1 className="text-deepPurple font-black text-4xl lg:text-[2.5rem]">
+            <h1 className="text-deepPurple font-black text-4xl lg:text-[2.5rem] max-lg:ml-4 ">
               Céline Poinson <br></br>
               <span className="text-3xl lg:text-5xl mt-20 lg:whitespace-nowrap">
                 Développeuse Front-end
@@ -29,7 +29,7 @@ export default function Home() {
               height={100}
             />
           </div>
-          <div className="w-[90%] text-sm">
+          <div className="max-lg:ml-4 lg:w-[90%] text-sm">
             <p>
               Spécialisée en JavaScript et React, j&apos;ai développé mes
               compétences lors d&apos;une formation intensive en 2022, avant de
@@ -47,7 +47,7 @@ export default function Home() {
           <div className="lg:hidden mt-16">
             <div className="relative">
               <Image
-                className="absolute -top-10 -left-5"
+                className="absolute -top-10 -left-5 animate-bounce"
                 src="/icons/react.svg"
                 alt="icône"
                 width={90}
@@ -83,6 +83,14 @@ export default function Home() {
               text="LinkedIn"
               src="/icons/linkedin-light.svg"
               alt="Logo LinkedIn"
+            />
+          </div>
+          <div className="z-20 lg:hidden absolute -bottom-24.5 left-0 -translate-x-8 w-screen h-[30px]">
+            <Image
+              src="/icons/line-x-mobile.svg"
+              alt="icône"
+              fill
+              className="object-cover"
             />
           </div>
         </div>

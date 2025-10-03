@@ -30,7 +30,7 @@ export default function Nav() {
 
   return (
     <nav
-      className={`z-20 w-screen lg:w-fit fixed top-8 left-1/2 -translate-x-1/2 flex justify-center gap-2 lg:gap-4 transition-all duration-1000 ${
+      className={`z-40 w-screen lg:w-fit fixed top-8 left-1/2 -translate-x-1/2 flex justify-center gap-2 lg:gap-4 transition-all duration-1000 ${
         showNav
           ? `translate-y-0 ${
               isScrollingUp

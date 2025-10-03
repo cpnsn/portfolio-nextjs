@@ -24,6 +24,7 @@ export default function DesktopMobileCarousel({ data }) {
         breakpoints={{
           0: {
             slidesPerView: 1,
+            autoHeight:true,
           },
           640: {
             slidesPerView: 2,
@@ -34,7 +35,7 @@ export default function DesktopMobileCarousel({ data }) {
         }}
       >
         {data.map((project, index) => (
-          <SwiperSlide key={project.id} className="flex justify-center my-10">
+          <SwiperSlide key={project.id} className="flex justify-center">
             <CardProject item={project} index={index} />
           </SwiperSlide>
         ))}

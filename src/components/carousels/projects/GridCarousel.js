@@ -21,6 +21,7 @@ export default function GridCarousel({ data }) {
           0: {
             slidesPerView: 1,
             slidesPerGroup: 1,
+            autoHeight:true,
           },
           640: {
             slidesPerView: 2,
@@ -34,7 +35,7 @@ export default function GridCarousel({ data }) {
         }}
       >
         {data.map((item, index) => (
-          <SwiperSlide key={item.id} className="flex justify-center my-10">
+          <SwiperSlide key={item.id} className="flex justify-center">
             <CardProject item={item} index={index} />
           </SwiperSlide>
         ))}

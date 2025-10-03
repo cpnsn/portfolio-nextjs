@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CardProject({ item, index }) {
   return (
-    <div className="flex justify-center group">
+    <div className="flex justify-center group my-10">
       <Link className="relative w-[90%]" href={`/projet/${item.id}`}>
         <div className="w-full bg-white shadow-sm/5 overflow-hidden group-hover:opacity-65 transition-opacity duration-1000 lg:h-[375px] rounded-tr-3xl rounded-bl-3xl p-2">
           <div

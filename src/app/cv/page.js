@@ -25,7 +25,7 @@ export default function Resume() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-beige0 to-beige1 pt-24 lg:pt-36">
+    <div className="bg-gradient-to-b from-beige0 to-beige1 pt-30 lg:pt-36">
       <header className="flex gap-10 mb-20 px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
         <div className="max-[375px]:hidden relative w-[50px] h-auto">
           <Image
@@ -254,13 +254,13 @@ export default function Resume() {
                 </p>
                 <p className="text-sm mb-8">Ironahck, Paris</p>
                 <Link
-                  className="max-lg:absolute bottom-20 whitespace-nowrap left-1/2 -translate-x-1/2 max-lg:block text-center bg-purple2 text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-6 max-lg:rounded-r-full rounded-l-full hover:bg-purple2/80 transition-colors duration-300"
+                  className="max-lg:absolute bottom-26 whitespace-nowrap w-[85%] left-1/2 -translate-x-1/2 max-lg:block text-center bg-purple2 text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-6 max-lg:rounded-r-full rounded-l-full hover:bg-purple2/80 transition-colors duration-300"
                   href="/portfolio/#ironhack"
                 >
                   Voir les projets
                 </Link>
                 <a
-                  className="max-lg:absolute bottom-5 whitespace-nowrap left-1/2 -translate-x-1/2 max-lg:block text-center lg:-ml-4 bg-deepPurple text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-4 lg:mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
+                  className="max-lg:absolute bottom-10 whitespace-nowrap w-[85%] left-1/2 -translate-x-1/2 max-lg:block text-center lg:-ml-4 bg-deepPurple text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-4 lg:mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
                   href="https://www.credential.net/7d024616-7967-460d-9a23-b6d93bc466c7#acc.QCYSROAv"
                   target="_blank"
                 >
@@ -296,7 +296,7 @@ export default function Resume() {
 
             <div className="relative lg:flex justify-between">
               <Image
-                className="hidden lg:block absolute -left-5 animate-bounce"
+                className="absolute max-lg:top-15 -left-5 animate-bounce max-lg:w-[50px]"
                 src="/icons/react.svg"
                 alt="icône"
                 width={80}
@@ -314,8 +314,8 @@ export default function Resume() {
                   Août 2023 - Août 2025
                 </p>
                 <p>
-                  Formation développeur d&apos;application <br></br> JavaScript -
-                  React
+                  Formation développeur d&apos;application <br></br> JavaScript
+                  - React
                 </p>
                 <p className="text-sm mb-8">OpenClassrooms</p>
               </div>
@@ -450,7 +450,8 @@ export default function Resume() {
                 Disponible immédiatement
               </span>
               <span className="bg-orange4 px-6 py-1.5 rounded-full">
-                JavaScript, React, Tailwind, une GRANDE capacité d&apos;adaptation
+                JavaScript, React, Tailwind, une GRANDE capacité
+                d&apos;adaptation
               </span>
               <span className="bg-deepPurple text-white px-6 py-1.5 rounded-full">
                 I speak English

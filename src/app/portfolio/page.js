@@ -4,8 +4,9 @@ import { projectsData } from "@/data/projects";
 import MobileOnlyCarousel from "@/components/carousels/projects/MobileOnlyCarousel";
 
 export const metadata = {
-  title: 'Portfolio',
-  description: 'Parcourez mon portfolio et découvrez les projets sur lesquels j\'ai eu l\'occasion de travailler'
+  title: "Portfolio",
+  description:
+    "Parcourez mon portfolio et découvrez les projets sur lesquels j'ai eu l'occasion de travailler",
 };
 
 export default function Portfolio() {
@@ -27,8 +28,9 @@ export default function Portfolio() {
         <div className="text-sm lg:w-[50%]">
           <p className="mb-4">
             Découvrez une sélection de projets qui ont marqué mon parcours :
-            d&apos;abord quelques réalisations full-stack, puis de nombreux projets
-            front-end qui m&apos;ont permis de consolider mes compétences.
+            d&apos;abord quelques réalisations full-stack, puis de nombreux
+            projets front-end qui m&apos;ont permis de consolider mes
+            compétences.
           </p>
           <p>
             HTML, CSS, JavaScript, React.js, Next.js, PHP, Symfony, Tailwind…
@@ -55,7 +57,7 @@ export default function Portfolio() {
         <div className="flex flex-col gap-10 lg:gap-20 bg-brownBg rounded-[2.5rem] lg:rounded-[4.5rem] py-10 lg:py-25 mx-auto px-[calc(2rem-3%)] min-[1024px]:px-[7%] min-[1280px]:px-[17%] min-[2000px]:px-[27%]">
           {projectsByCategory.map((cat) => (
             <div key={cat.id} id={cat.id}>
-              <div className="relative w-full max-w-lg sm:mb-12">
+              <div className="relative w-full max-w-lg sm:mb-12 max-lg:px-4">
                 <h2 className="text-deepPurple mt-8 text-3xl lg:text-[2.5rem] font-black">
                   {cat.formation}
                 </h2>
@@ -73,7 +75,7 @@ export default function Portfolio() {
           <div className="flex max-lg:flex-col justify-center gap-4 text-deepPurple">
             <Link
               href="/cv"
-              className="max-w-[330px] max-lg:mx-auto flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
+              className="flex gap-8 justify-around py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
             >
               <p>
                 Au-delà des projets <br></br>{" "}
@@ -88,7 +90,7 @@ export default function Portfolio() {
             </Link>
             <Link
               href="mailto:contact@celinepoinson.com"
-              className="max-w-[330px] max-lg:mx-auto flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
+              className="flex gap-8 justify-around py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
             >
               <p>
                 N&apos;hésitez pas à <br></br>{" "}

@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Legal() {
   return (
-    <div className="bg-beige0 pt-24 lg:pt-36 px-8 min-[768px]:px-[10%] min-[1280px]:px-[20%] min-[2000px]:px-[30%] min-h-screen">
+    <div className="bg-beige0 pt-30 lg:pt-36 px-8 min-[768px]:px-[10%] min-[1280px]:px-[20%] min-[2000px]:px-[30%] min-h-screen">
       <div className="relative w-full max-w-lg lg:mb-25">
         <h1 className="text-deepPurple font-black text-4xl lg:text-5xl">
           Mentions légales

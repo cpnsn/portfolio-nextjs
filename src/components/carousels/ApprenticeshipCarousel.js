@@ -28,6 +28,7 @@ export default function ApprenticeshipCarousel({ data }) {
         breakpoints={{
           0: {
             slidesPerView: 1,
+            autoHeight: true,
           },
         }}
       >
@@ -40,7 +41,7 @@ export default function ApprenticeshipCarousel({ data }) {
                 </h4>
                 {item.content}
                 <Link
-                  className={`max-lg:absolute bottom-20 whitespace-nowrap left-1/2 -translate-x-1/2 max-lg:block text-center bg-purple2 text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-6 max-lg:rounded-r-full ${
+                  className={`whitespace-nowrap lg:left-1/2 lg:-translate-x-1/2 max-lg:block text-center bg-purple2 text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-6 max-lg:rounded-r-full ${
                     !item.linkDiploma ? "rounded-r-full" : ""
                   } rounded-l-full hover:bg-purple2/80 transition-colors duration-300`}
                   href={item.linkProjects}
@@ -49,7 +50,7 @@ export default function ApprenticeshipCarousel({ data }) {
                 </Link>
                 {item.linkDiploma && (
                   <a
-                    className="max-lg:absolute bottom-5 whitespace-nowrap left-1/2 -translate-x-1/2 max-lg:block text-center lg:-ml-4 bg-deepPurple text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-4 lg:mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
+                    className="whitespace-nowrap lg:left-1/2 lg:-translate-x-1/2 max-lg:block text-center lg:-ml-4 bg-deepPurple text-beige0 py-3 lg:py-2 px-6 lg:px-8 mt-4 lg:mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
                     href={item.linkDiploma}
                     target="_blank"
                   >
@@ -59,7 +60,7 @@ export default function ApprenticeshipCarousel({ data }) {
               </div>
               <Image
                 onClick={goToNextOrPrev}
-                className="max-lg:mx-auto w-[40px] h-[40px] my-auto cursor-pointer hover:animate-pulse"
+                className="max-lg:mx-auto max-lg:mt-10 w-[40px] h-[40px] my-auto cursor-pointer hover:animate-pulse"
                 src="/icons/arrow-next.svg"
                 alt="icône"
                 width={100}
@@ -74,7 +75,7 @@ export default function ApprenticeshipCarousel({ data }) {
               />
               <button
                 onClick={goToNextOrPrev}
-                className="max-lg:w-full max-lg:mb-35 text-deepPurple cursor-pointer font-bold text-xl lg:[writing-mode:vertical-rl] lg:rotate-180 whitespace-nowrap"
+                className="max-lg:w-full text-deepPurple cursor-pointer font-bold text-xl lg:[writing-mode:vertical-rl] lg:rotate-180 whitespace-nowrap"
               >
                 {item.btnText}
               </button>
