@@ -66,7 +66,7 @@ export default function Home() {
               />
             </div>
             <CardLink
-              href="mailto:cpoinson@hotmail.fr"
+              href="mailto:contact@celinepoinson.com"
               text="Contact"
               color="bg-orange1"
             />
@@ -146,10 +146,10 @@ export default function Home() {
           <Link href="/cv">
             <Image
               className="mx-auto lg:absolute lg:w-[35%] lg:rotate-10 top-1/2 lg:-translate-y-1/2 right-[10%] shadow-sm rounded-3xl border border-4 border-brownBg hover:opacity-90"
-              src="/images/cv.png"
+              src="/images/resume.png"
               alt="icône"
-              width={400}
-              height={90}
+              width={1000}
+              height={1000}
             />
           </Link>
           <Link
@@ -204,7 +204,7 @@ export default function Home() {
             />
             <a
               className="h-fit mx-6 bg-purple2 text-beige0 font-bold text-lg py-2 px-6 mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
-              href="mailto:cpoinson@hotmail.fr"
+              href="mailto:contact@celinepoinson.com"
             >
               Me contacter
             </a>

@@ -25,7 +25,7 @@ export default function Legal() {
       </h2>
       <div className="ml-6">
         <p className="!font-bold text-deepPurple mb-4">Céline Poinson</p>
-        <p className="mb-2">cpoinson@hotmail.fr</p>
+        <p className="mb-2">contact@celinepoinson.com</p>
         <p>06 20 32 20 71</p>
       </div>
 

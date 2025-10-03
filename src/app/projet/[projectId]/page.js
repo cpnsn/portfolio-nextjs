@@ -192,7 +192,7 @@ export default function Projet({ params }) {
               />
             </Link>
             <Link
-              href="mailto:cpoinson@hotmail.fr"
+              href="mailto:contact@celinepoinson.com"
               className="max-w-[330px] max-lg:mx-auto flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
             >
               <p>

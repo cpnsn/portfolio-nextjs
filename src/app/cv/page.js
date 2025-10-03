@@ -345,7 +345,7 @@ export default function Resume() {
               <h4 className="text-sm font-bold text-deepPurple">Où ça ?</h4>
               <p className="mb-4 text-deepPurple">En IDF idéalement</p>
               <h4 className="text-sm font-bold text-deepPurple">E-mail</h4>
-              <p className="mb-4 text-deepPurple">cpoinson@hotmail.fr</p>
+              <p className="mb-4 text-deepPurple">contact@celinepoinson.com</p>
             </div>
             <div className="lg:w-[48%] flex flex-col justify-between">
               <div className="shadow-sm lg:h-[80%] bg-orange6/70 rounded-3xl border border-white border-4 py-8 px-8 lg:px-12">
@@ -414,7 +414,7 @@ export default function Resume() {
               </div>
               <a
                 className="shadow-sm w-[80%] mx-auto max-lg:mt-8 h-[70px] lg:h-[15%] bg-purple2 text-beige0 text-3xl font-extrabold flex items-center justify-center rounded-full hover:bg-purple5 transition-colors duration-300"
-                href="mailto:cpoinson@hotmail.fr"
+                href="mailto:contact@celinepoinson.com"
               >
                 Me contacter
               </a>
