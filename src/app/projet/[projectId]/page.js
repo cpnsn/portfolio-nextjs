@@ -11,8 +11,8 @@ export const metadata = {
     "Parcourez mon portfolio et découvrez les projets sur lesquels j'ai eu l'occasion de travailler",
 };
 
-export default function Projet({ params }) {
-  const { projectId } = params;
+export default async function Projet({ params }) {
+  const { projectId } = await params;
   const allProjects = projectsData.flatMap((cat) => cat.projects);
   const project = allProjects.find((p) => p.id === projectId);
   const category = projectsData.find((cat) =>
@@ -196,7 +196,7 @@ export default function Projet({ params }) {
               className="max-w-[330px] max-lg:mx-auto flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
             >
               <p>
-                N'hésitez pas à <br></br>{" "}
+                N&apos;hésitez pas à <br></br>{" "}
                 <span className="font-bold text-xl">Me contacter</span>
               </p>
               <Image

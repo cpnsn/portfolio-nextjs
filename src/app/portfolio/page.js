@@ -27,8 +27,8 @@ export default function Portfolio() {
         <div className="text-sm lg:w-[50%]">
           <p className="mb-4">
             Découvrez une sélection de projets qui ont marqué mon parcours :
-            d’abord quelques réalisations full-stack, puis de nombreux projets
-            front-end qui m’ont permis de consolider mes compétences.
+            d&apos;abord quelques réalisations full-stack, puis de nombreux projets
+            front-end qui m&apos;ont permis de consolider mes compétences.
           </p>
           <p>
             HTML, CSS, JavaScript, React.js, Next.js, PHP, Symfony, Tailwind…
@@ -91,7 +91,7 @@ export default function Portfolio() {
               className="max-w-[330px] max-lg:mx-auto flex gap-8 py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
             >
               <p>
-                N'hésitez pas à <br></br>{" "}
+                N&apos;hésitez pas à <br></br>{" "}
                 <span className="font-bold text-xl">Me contacter</span>
               </p>
               <Image

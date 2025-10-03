@@ -291,7 +291,7 @@ export default function Resume() {
 
           <div className="relative bg-beige0 p-8 lg:p-16 xl:w-[900px] mx-auto rounded-xl mt-14">
             <h3 className="absolute -top-4 left-0 lg:right-15 text-2xl text-purple5 font-semibold">
-              L'alternance
+              L&apos;alternance
             </h3>
 
             <div className="relative lg:flex justify-between">
@@ -314,7 +314,7 @@ export default function Resume() {
                   Août 2023 - Août 2025
                 </p>
                 <p>
-                  Formation développeur d'application <br></br> JavaScript -
+                  Formation développeur d&apos;application <br></br> JavaScript -
                   React
                 </p>
                 <p className="text-sm mb-8">OpenClassrooms</p>
@@ -328,7 +328,7 @@ export default function Resume() {
           <div className="lg:w-[900px] mx-auto lg:flex justify-between">
             <div className="shadow-sm lg:w-[48%] bg-orange6/70 max-lg:mb-8 rounded-3xl border border-white border-4 py-8 px-12">
               <h3 className="text-2xl text-deepPurple font-semibold">
-                Plus d'informations
+                Plus d&apos;informations
               </h3>
               <h4 className="text-sm font-bold text-deepPurple mt-10">
                 Localisation
@@ -401,7 +401,7 @@ export default function Resume() {
                 </div>
 
                 <h3 className="text-lg text-deepPurple font-semibold text-center mt-6 mb-2">
-                  En cours d'apprentissage
+                  En cours d&apos;apprentissage
                 </h3>
                 <div className="flex flex-wrap justify-center gap-2">
                   <p className="bg-orange1 w-fit py-1 px-3 rounded-lg text-sm">
@@ -444,13 +444,13 @@ export default function Resume() {
             </div>
             <div className="relative flex flex-wrap gap-4 text-sm lg:w-[600px] mt-10">
               <span className="bg-purple2 text-white px-6 py-1.5 rounded-full">
-                2 ans d'expérience en alternance
+                2 ans d&apos;expérience en alternance
               </span>
               <span className="bg-purple4 text-deepPurple px-6 py-1.5 rounded-full">
                 Disponible immédiatement
               </span>
               <span className="bg-orange4 px-6 py-1.5 rounded-full">
-                JavaScript, React, Tailwind, une GRANDE capacité d'adaptation
+                JavaScript, React, Tailwind, une GRANDE capacité d&apos;adaptation
               </span>
               <span className="bg-deepPurple text-white px-6 py-1.5 rounded-full">
                 I speak English

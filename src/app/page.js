@@ -31,17 +31,17 @@ export default function Home() {
           </div>
           <div className="w-[90%] text-sm">
             <p>
-              Spécialisée en JavaScript et React, j’ai développé mes compétences
-              lors d’une formation intensive en 2022, avant de les consolider au
-              cours de deux années d’alternance.
+              Spécialisée en JavaScript et React, j&apos;ai développé mes
+              compétences lors d&apos;une formation intensive en 2022, avant de
+              les consolider au cours de deux années d&apos;alternance.
             </p>
             <p className="my-4">
-              Forte d’un parcours en reconversion, j’apporte rigueur,
+              Forte d&apos;un parcours en reconversion, j&apos;apporte rigueur,
               adaptabilité et une approche créative à chaque projet.
             </p>
             <p>
-              Je souhaite aujourd’hui mettre ces atouts au service d’une équipe
-              et contribuer à des projets front-end innovants.
+              Je souhaite aujourd&apos;hui mettre ces atouts au service
+              d&apos;une équipe et contribuer à des projets front-end innovants.
             </p>
           </div>
           <div className="lg:hidden mt-16">
