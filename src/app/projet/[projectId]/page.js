@@ -192,7 +192,7 @@ export default async function Projet({ params }) {
               />
             </Link>
             <Link
-              href="mailto:contact@celinepoinson.com"
+              href="mailto:celinepoinsondev@gmail.com"
               className="flex gap-8 justify-around py-4 px-10 bg-beige0 hover:bg-beige0/70 transition duration-300 rounded-xl border border-white border-4"
             >
               <p>

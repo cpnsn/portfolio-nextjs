@@ -17,7 +17,7 @@ export default function QandA({ data }) {
             {item.question}
             <Image
               src="/icons/arrow-down.svg"
-              alt="{item.title}"
+              alt="icône"
               width={30}
               height={30}
               className={`transform transition-transform duration-300 ${

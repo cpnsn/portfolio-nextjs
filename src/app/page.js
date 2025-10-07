@@ -66,7 +66,7 @@ export default function Home() {
               />
             </div>
             <CardLink
-              href="mailto:contact@celinepoinson.com"
+              href="mailto:celinepoinsondev@gmail.com"
               text="Contact"
               color="bg-orange1"
             />
@@ -212,7 +212,7 @@ export default function Home() {
             />
             <a
               className="h-fit mx-6 bg-purple2 text-beige0 font-bold text-lg py-2 px-6 mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
-              href="mailto:contact@celinepoinson.com"
+              href="mailto:celinepoinsondev@gmail.com"
             >
               Me contacter
             </a>

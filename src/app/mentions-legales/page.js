@@ -1,9 +1,10 @@
 import Image from "next/image";
 
 export const metadata = {
-    title: 'Mentions légales',
-    description: 'Mentions légales | Éditeur | Hébergeur | Propriété intellectuelle'
-  };
+  title: "Mentions légales",
+  description:
+    "Mentions légales | Éditeur | Hébergeur | Propriété intellectuelle",
+};
 
 export default function Legal() {
   return (
@@ -25,7 +26,7 @@ export default function Legal() {
       </h2>
       <div className="ml-6">
         <p className="!font-bold text-deepPurple mb-4">Céline Poinson</p>
-        <p className="mb-2">contact@celinepoinson.com</p>
+        <p className="mb-2">celinepoinsondev@gmail.com</p>
         <p>06 20 32 20 71</p>
       </div>
 
@@ -45,9 +46,9 @@ export default function Legal() {
       </h2>
       <div className="ml-6">
         <p>
-          L’ensemble du contenu présent sur ce site (textes, images, icônes,
-          etc.) est, sauf mention contraire, la propriété exclusive de Céline
-          Poinson. Toute reproduction, représentation, modification,
+          L’ensemble du contenu présent sur ce site (textes, images, graphismes,
+          icônes, etc.) est, sauf mention contraire, la propriété exclusive de
+          Céline Poinson. Toute reproduction, représentation, modification,
           publication, transmission, ou adaptation, partielle ou intégrale, est
           interdite sans l’accord préalable de l’auteur.{" "}
         </p>
