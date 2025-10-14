@@ -31,7 +31,7 @@ export const projectsData = [
           "Playwright",
           "Jest",
         ],
-        link: null,
+        link: "https://www.iciformation.fr",
         github: null,
       },
       {
@@ -55,7 +55,7 @@ export const projectsData = [
         image: "/images/projects/outplacement-et-reclassement.png",
         default: true,
         tags: ["Ici Formation", "Next.js", "Tailwind"],
-        link: null,
+        link: "https://www.outplacement-et-reclassement.com",
         github: null,
       },
       {

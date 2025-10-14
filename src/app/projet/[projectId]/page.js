@@ -135,7 +135,7 @@ export default async function Projet({ params }) {
                   href={project.link ?? project.github}
                   target="_blank"
                 >
-                  {project.link ? "Voir le projet" : "Github"}
+                  {category.id == "iciformation" ? "Voir le site" : project.link ? "Voir le projet" : "Github"}
                 </a>
               )}
             </div>
