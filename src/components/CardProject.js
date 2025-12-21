@@ -12,10 +12,12 @@ export default function CardProject({ item, index }) {
             }`}
           >
             <div className="mx-auto shadow-sm rounded-t-2xl w-[80%] max-h-[130px] object-cover overflow-hidden group-hover:max-h-[0] transition-max-h ease-in-out duration-400">
-              <img
+              <Image
                 className="w-full"
                 src={item.image}
                 alt={item.title}
+                width={300}
+                height={130}
               />
             </div>
             <Image
