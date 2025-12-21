@@ -54,8 +54,8 @@ export default function Home() {
                 height={80}
               />
             </div>
-            <CardLink href="/portfolio" text="Portfolio" color="bg-orange4" />
-            <CardLink href="/cv" text="CV" color="bg-purple3" />
+            <CardLink href="/portfolio" text="Portfolio" color="bg-orange1" />
+            <CardLink href="/cv" text="CV" color="bg-purple1" />
             <div className="relative">
               {/* <Image
                 className="absolute -top-3 -right-5"
@@ -68,7 +68,7 @@ export default function Home() {
             <CardLink
               href="mailto:celinepoinsondev@gmail.com"
               text="Contact"
-              color="bg-orange4"
+              color="bg-orange1"
             />
           </div>
           <div className="flex gap-2 mt-2 lg:mt-8">

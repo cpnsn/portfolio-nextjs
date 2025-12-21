@@ -4,7 +4,7 @@ export default function Socials({ href, text, src, alt }) {
   return (
     <div className="max-lg:flex-1">
       <a
-        className="flex justify-center bg-deepPurple text-beige0 py-2 px-8 rounded-sm lg:min-w-[150px] hover:bg-purple2 transition-colors duration-300"
+        className="flex justify-center bg-deepPurple text-beige0 py-2 px-8 rounded-xl lg:min-w-[150px] hover:bg-purple2 transition-colors duration-300"
         href={href}
         target="_blank"
       >

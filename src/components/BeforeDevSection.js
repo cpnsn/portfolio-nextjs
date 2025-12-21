@@ -42,7 +42,7 @@ export default function BeforeDevSection() {
           <p>Première année de licence LLCE anglais</p>
           <p className="text-sm">Université de Cergy-Pontoise</p>
         </div>
-        <div className="relative bg-orange5 mt-16 py-16 lg:py-30 px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
+        <div className="relative bg-orange1 mt-16 py-16 lg:py-30 px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
           <div className="relative w-full max-w-lg lg:mb-12">
             <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
               Premières expériences <br></br> en entreprise
@@ -122,7 +122,7 @@ export default function BeforeDevSection() {
           </div>
         </div>
 
-        <div className="relative bg-orange5 mt-16 py-16 lg:py-30 px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
+        <div className="relative bg-orange1 mt-16 py-16 lg:py-30 px-8 min-[768px]:px-[10%] min-[1400px]:px-[15%] min-[1600px]:px-[25%] min-[2000px]:px-[30%]">
           <div className="relative w-full max-w-lg lg:mb-12">
             <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
               La traduction

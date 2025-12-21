@@ -11,10 +11,10 @@ const bricolageGrotesque = Bricolage_Grotesque({
 
 export const metadata = {
   title: {
-    template: '%s | Céline Poinson',
-    default: 'Céline Poinson | Développeuse Front-end',
+    template: "%s | Céline Poinson",
+    default: "Céline Poinson | Développeuse Front-end",
   },
-    description:
+  description:
     "Bienvenue sur le site de Céline Poinson, développeuse front-end spécialisée en React et Next.js.",
 };
 
