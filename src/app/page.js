@@ -50,28 +50,28 @@ export default function Home() {
                 className="absolute -top-10 -left-5 animate-bounce"
                 src="/icons/react.svg"
                 alt="icône"
-                width={90}
-                height={90}
+                width={80}
+                height={80}
               />
             </div>
-            <CardLink href="/portfolio" text="Portfolio" color="bg-orange1" />
-            <CardLink href="/cv" text="CV" color="bg-purple1" />
+            <CardLink href="/portfolio" text="Portfolio" color="bg-orange4" />
+            <CardLink href="/cv" text="CV" color="bg-purple3" />
             <div className="relative">
-              <Image
-                className="absolute -top-10 -right-5"
+              {/* <Image
+                className="absolute -top-3 -right-5"
                 src="/icons/javascript.svg"
                 alt="icône"
-                width={90}
-                height={90}
-              />
+                width={70}
+                height={70}
+              /> */}
             </div>
             <CardLink
               href="mailto:celinepoinsondev@gmail.com"
               text="Contact"
-              color="bg-orange1"
+              color="bg-orange4"
             />
           </div>
-          <div className="flex gap-2 mt-4 lg:mt-8">
+          <div className="flex gap-2 mt-2 lg:mt-8">
             <Socials
               href="https://github.com/cpnsn/"
               text="GitHub"
@@ -85,7 +85,7 @@ export default function Home() {
               alt="Logo LinkedIn"
             />
           </div>
-          <div className="z-20 lg:hidden absolute -bottom-24.5 left-0 -translate-x-8 w-screen h-[30px]">
+          <div className="z-20 sm:hidden absolute -bottom-24.5 left-0 -translate-x-8 w-screen h-[30px]">
             <Image
               src="/icons/line-x-mobile.svg"
               alt="icône"
@@ -168,14 +168,14 @@ export default function Home() {
           </Link>
         </div>
 
-        <Image
+        {/* <Image
           className="hidden lg:block w-full -mb-5"
           src="/icons/section-purple.svg"
           alt="icône"
           width={400}
           height={90}
-        />
-        <div className="bg-orange5 py-30 px-8">
+        /> */}
+        <div className="bg-orange1 py-20 sm:py-30 px-8">
           <div className="hidden lg:flex gap-30 justify-center align-center mb-20">
             <Image src="/icons/react.svg" alt="icône" width={90} height={90} />
             <Image
@@ -211,7 +211,7 @@ export default function Home() {
               height={90}
             />
             <a
-              className="h-fit mx-6 bg-purple2 text-beige0 font-bold text-lg py-2 px-6 mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
+              className="h-fit mx-6 whitespace-nowrap bg-purple2 text-beige0 font-bold text-lg py-2 px-6 mt-6 rounded-full hover:bg-purple5 transition-colors duration-300"
               href="mailto:celinepoinsondev@gmail.com"
             >
               Me contacter

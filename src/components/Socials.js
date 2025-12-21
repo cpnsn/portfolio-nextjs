@@ -10,7 +10,7 @@ export default function Socials({ href, text, src, alt }) {
       >
         <span className="hidden lg:inline font-bold text-lg">{text}</span>
         <span className="inline lg:hidden">
-          <Image src={src} alt={alt} width={50} height={50} />
+          <Image src={src} alt={alt} width={40} height={40} />
         </span>
       </a>
     </div>

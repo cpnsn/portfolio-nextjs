@@ -9,7 +9,7 @@ export default function BeforeDevSection() {
     <div>
       <div
         onClick={() => setVisible(false)}
-        className={`bg-orange5 mt-16 py-16 lg:py-30 text-center cursor-pointer transition-all duration-700 ease-in-out
+        className={`bg-orange1 mt-16 py-16 lg:py-30 text-center cursor-pointer transition-all duration-700 ease-in-out
           ${
             visible
               ? "opacity-100 translate-y-0"

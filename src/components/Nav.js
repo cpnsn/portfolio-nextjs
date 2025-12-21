@@ -30,11 +30,11 @@ export default function Nav() {
 
   return (
     <nav
-      className={`z-40 w-screen lg:w-fit fixed top-8 left-1/2 -translate-x-1/2 flex justify-center gap-2 lg:gap-4 transition-all duration-1000 ${
+      className={`z-40 w-screen fixed bg-white border-b border-b-brownText/20 left-1/2 -translate-x-1/2 flex justify-center gap-2 lg:gap-6 transition-all duration-1000 ${
         showNav
           ? `translate-y-0 ${
               isScrollingUp
-                ? "min-lg:bg-beige0/95 px-8 p-4 rounded-4xl min-lg:backdrop-blur-sm min-lg:ring-2 min-lg:ring-white"
+                ? "shadow-[0_8px_15px_rgba(0,0,0,0.02)] lg:px-4 min-lg:backdrop-blur-sm"
                 : ""
             }`
           : "-translate-y-[calc(100%+2rem)]"
@@ -46,10 +46,10 @@ export default function Nav() {
           <Link
             key={link.href}
             href={link.href}
-            className={`rounded-full py-2 lg:px-4 w-[29%] lg:w-[8rem] text-center border hover:-translate-y-1 ease-in-out hover:bg-orange3 transition duration-300 ${
+            className={`p-4 w-[29%] lg:w-[7rem] rounded-b-lg text-center hover:-translate-y-1 ease-in-out transition duration-300 ${
               isActive
-                ? "bg-beige0 border-orange1 pointer-events-none"
-                : "bg-orange1 border-white"
+                ? "pointer-events-none text-brownText/50"
+                : "text-deepPurple"
             }`}
           >
             {link.label}
