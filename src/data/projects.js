@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     id: "perso",
-    formation: "personnels",
+    formation: "Projets personnels",
     projects: [
       {
         id: "stidy",
