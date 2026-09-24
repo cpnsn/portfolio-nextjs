@@ -16,7 +16,7 @@ export default async function Projet({ params }) {
   const allProjects = projectsData.flatMap((cat) => cat.projects);
   const project = allProjects.find((p) => p.id === projectId);
   const category = projectsData.find((cat) =>
-    cat.projects.some((proj) => proj.id === projectId)
+    cat.projects.some((proj) => proj.id === projectId),
   );
 
   const relatedProjets = category
@@ -135,7 +135,11 @@ export default async function Projet({ params }) {
                   href={project.link ?? project.github}
                   target="_blank"
                 >
-                  {category.id == "iciformation" ? "Voir le site" : project.link ? "Voir le projet" : "Github"}
+                  {category.id == "iciformation"
+                    ? "Voir le site"
+                    : project.link
+                      ? "Voir le projet"
+                      : "Github"}
                 </a>
               )}
             </div>
@@ -145,21 +149,23 @@ export default async function Projet({ params }) {
 
       <main className="bg-gradient-to-b from-beige0 to-beige1 pt-[3%] px-[3%] rounded-t-[3rem] lg:rounded-t-[6rem]">
         <div className="flex flex-col gap-10 lg:gap-20 bg-brownBg rounded-[2.5rem] lg:rounded-[4.5rem] py-10 lg:py-25 mx-auto px-[calc(2rem-3%)] min-[1024px]:px-[7%] min-[1280px]:px-[17%] min-[2000px]:px-[27%]">
-          <div>
-            <div className="relative w-full max-w-lg lg:mb-12 max-lg:px-4">
-              <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
-                Autres projets {category.formation}
-              </h2>
-              <Image
-                className="absolute w-[50%] -ml-4 mt-2"
-                src="/icons/line-title.svg"
-                alt="icône"
-                width={400}
-                height={90}
-              />
+          {relatedProjets > 0 && (
+            <div>
+              <div className="relative w-full max-w-lg lg:mb-12 max-lg:px-4">
+                <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">
+                  Autres projets {category.formation}
+                </h2>
+                <Image
+                  className="absolute w-[50%] -ml-4 mt-2"
+                  src="/icons/line-title.svg"
+                  alt="icône"
+                  width={400}
+                  height={90}
+                />
+              </div>
+              <MobileOnlyCarousel data={relatedProjets} />
             </div>
-            <MobileOnlyCarousel data={relatedProjets} />
-          </div>
+          )}
           <div>
             <div className="relative w-full max-w-lg lg:mb-12 max-lg:px-4">
               <h2 className="text-deepPurple text-3xl lg:text-[2.5rem] font-black">

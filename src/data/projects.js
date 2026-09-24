@@ -1,5 +1,42 @@
 export const projectsData = [
   {
+    id: "perso",
+    formation: "personnels",
+    projects: [
+      {
+        id: "stidy",
+        title: "Stidy",
+        year: "2026",
+        summary:
+          "J’ai conçu et développé Stidy, une plateforme dédiée à la recherche de formations professionnelles. Le projet a été développé de manière autonome, de la conception de l’interface jusqu’à la mise en place de l’architecture back-end et de la base de données. J’ai notamment travaillé sur la recherche de formations, les filtres, les recommandations et l’optimisation des performances.",
+        goal: "L’objectif de Stidy est de proposer une plateforme simple et intuitive permettant de rechercher et découvrir des formations professionnelles selon différents critères. Le projet vise à faciliter l’accès à l’information grâce à une recherche rapide, des filtres adaptés et une présentation claire des formations, tout en conservant de bonnes performances et une architecture évolutive.",
+        features: [
+          "Moteur de recherche de formations avec filtres par localisation, CPF, alternance et formation à distance",
+          "Mise en place d’une API et gestion des données avec Prisma et PostgreSQL",
+          "Optimisation des performances et de l’expérience utilisateur",
+        ],
+        challenges: [
+          "Concevoir une architecture performante capable de gérer un volume important de formations",
+          "Optimiser les recherches et les filtres PostgreSQL tout en conservant une expérience utilisateur fluide",
+          "Gérer les problématiques de cache, de performances et de compatibilité avec différents environnements",
+        ],
+        image: "/images/projects/stidy.png",
+        default: true,
+        tags: [
+          "Projets personnels",
+          "Next.js",
+          "TypeScript",
+          "Tailwind",
+          "PostgreSQL",
+          "Prisma",
+          "Vercel",
+        ],
+        link: "https://www.stidy.fr",
+        github: null,
+      },
+    ],
+  },
+  {
     id: "iciformation",
     formation: "Ici Formation",
     projects: [
@@ -300,7 +337,7 @@ export const projectsData = [
           "Séparer la logique métier (appels API, transformation des données) de la logique d’affichage React pour un code clair et réutilisable",
         ],
         image: "/images/projects/sportsee.png",
-        default: true,
+        default: false,
         tags: ["OpenClassrooms", "React", "Recharts", "Tailwind"],
         link: null,
         github: "https://github.com/cpnsn/SportSee",
