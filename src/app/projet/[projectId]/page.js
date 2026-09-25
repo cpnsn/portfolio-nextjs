@@ -52,8 +52,8 @@ export default async function Projet({ params }) {
                 className="w-full max-lg:rounded-t-2xl shadow-sm lg:rounded-tr-3xl lg:rounded-bl-3xl"
                 src={project.image}
                 alt={project.title}
-                width={1000}
-                height={1000}
+                width={600}
+                height={320}
                 quality={100}
               />
             </div>
