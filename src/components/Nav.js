@@ -30,11 +30,11 @@ export default function Nav() {
 
   return (
     <nav
-      className={`z-40 w-screen fixed bg-white border-b border-b-brownText/20 left-1/2 -translate-x-1/2 flex justify-center gap-2 lg:gap-6 transition-all duration-1000 ${
+      className={`z-40 w-screen p-4 fixed left-1/2 -translate-x-1/2 flex justify-center gap-2 lg:gap-4 transition-all duration-1000 ${
         showNav
           ? `translate-y-0 ${
               isScrollingUp
-                ? "shadow-[0_8px_15px_rgba(0,0,0,0.02)] lg:px-4 min-lg:backdrop-blur-sm"
+                ? "bg-beige0/95 px-8 min-lg:backdrop-blur-sm min-lg:ring-2 min-lg:ring-white"
                 : ""
             }`
           : "-translate-y-[calc(100%+2rem)]"
@@ -46,10 +46,10 @@ export default function Nav() {
           <Link
             key={link.href}
             href={link.href}
-            className={`p-4 w-[29%] lg:w-[7rem] rounded-b-lg text-center hover:-translate-y-1 ease-in-out transition duration-300 ${
+            className={`font-thin rounded-full py-2 lg:px-4 w-[29%] lg:w-[8rem] text-center border hover:-translate-y-1 ease-in-out hover:bg-orange3 transition duration-300 ${
               isActive
-                ? "pointer-events-none text-brownText/50"
-                : "text-deepPurple"
+                ? "bg-beige0 border-orange1 pointer-events-none"
+                : "bg-orange1 border-white"
             }`}
           >
             {link.label}
